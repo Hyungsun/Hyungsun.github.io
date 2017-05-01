@@ -122,6 +122,13 @@ var {
     font-weight: normal;
 }
 
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 
 /* global */
 
@@ -167,7 +174,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    min-width: 980px;
+    min-width: 320px;
 }
 
 #zionContent {
@@ -216,6 +223,9 @@ body {
 .head_type3 .icon_portfolio {
     background: url("../img/logo_black.png") no-repeat;
 }
+
+/* 모바일 HEAD */
+
 
 
 /* gnb */
@@ -322,7 +332,7 @@ body {
 /* gnb type2 */
 
 .head_type2,
-.head_type3{
+.head_type3 {
     background-color: #fff
 }
 
@@ -353,7 +363,7 @@ body {
 .head_type2 .gnb_portfolio .link_gnb:focus .txt_menu,
 .head_type3 .on .link_gnb .txt_menu,
 .head_type3 .gnb_portfolio .link_gnb:hover .txt_menu,
-.head_type3 .gnb_portfolio .link_gnb:focus .txt_menu{
+.head_type3 .gnb_portfolio .link_gnb:focus .txt_menu {
     opacity: .96;
     filter: alpha(opacity=96)
 }
@@ -375,12 +385,12 @@ body {
     font-weight: 600;
 }
 
-
 .gnb_portfolio .list_sub .txt_menu:hover {
     opacity: .96;
     filter: alpha(opacity=96);
     font-weight: 600;
 }
+
 
 /* footer */
 
@@ -492,17 +502,20 @@ body {
     width: 100%;
     height: 400px;
 }
+.list_intro .img_inside{
+    width:400px;
+    height:399px;
+}
 .list_intro {
     text-align: center;
 }
+
 .list_intro .link_moreview {
     background-color: #71c7f8;
-
 }
 
 .list_intro .link_call {
     background-color: #ebe541;
-
 }
 
 .list_intro .tit_intro {
@@ -510,4 +523,175 @@ body {
     left: 19px;
     top: 18px;
     font-size: 15px;
+}
+
+
+/* 반응형 Tablet 768px */
+
+#mobHead {
+    display: none;
+}
+
+@media all and (max-width:1300px) {
+    .wrap_banner .txt_banner {
+       padding:208px 170px 0;
+    }    
+}
+
+@media all and (max-width:1200px) {
+    .list_intro .link_intro{
+        height:319px;
+    }
+    .list_intro .img_inside{
+        width:320px;
+        height:319px;
+    }
+}
+
+@media all and (max-width:1050px) {
+    .list_intro .link_intro{
+        height:299px;
+    }
+    .list_intro .img_inside{
+        width:300px;
+        height:299px;
+    }
+}
+
+@media all and (max-width:980px) {
+    .wrap_banner .txt_banner {
+       padding:208px 98px 0;
+    }
+}
+
+@media all and (max-width:900px) {
+    .list_intro .link_intro{
+        height:249px
+    }
+    .list_intro .img_inside{
+        width:250px;
+        height:249px;
+    }
+}
+
+@media all and (max-width:768px) {
+    
+    /* mob head 영역 */
+    #zionHead {
+        display: none;
+    }
+    #mobHead {
+        display: block;
+        position: fixed;
+          z-index: 9999;
+    }
+    #mobHead .wrap_head {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .wrap_head .mob_logo {
+        display: inline-block;
+        height: inherit;
+    }
+    .mob_logo img {
+        padding-top: 7px;
+    }
+    .wrap_head .toggle-btn {
+        position: absolute;
+        right: 15px;
+    }
+    
+    /* Toggle 버튼 */
+    #toggle {
+        width: 28px;
+        height: 30px;
+        margin: 10px auto;
+    }
+    #toggle div {
+        width: 100%;
+        height: 5px;
+        background: #292929;
+        margin: 4px auto;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+    }
+    #toggle.on .one {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #toggle.on .two {
+        opacity: 0;
+    }
+    #toggle.on .three {
+        transform: rotate(-45deg) translate(7px, -8px);
+    }
+    
+    /* 1차 DROP Toggle*/
+    .wrap_head .drop_toggle {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        /*        padding-top: 10px;*/
+        text-align: center;
+        background-color: #fff;
+        border-bottom: 1px solid #f1f1f1;
+        box-sizing: border-box;
+    }
+    .drop_toggle li {
+        border-top: 1px solid #f1f1f1;
+        box-sizing: border-box;
+    }
+    .drop_toggle li a {
+        padding: 15px 0;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #292929;
+        opacity: .75;
+    }
+    .drop_toggle li a:hover,
+    .drop_toggle li a:focus,
+    .drop_toggle li a:active {
+        text-decoration: none;
+        background-color: #f1f1f1;
+        opacity: .96;
+        filter: alpha(opacity=96)
+    }
+    
+    /* 2차 DROP Toggle */
+    .sub_toggle {
+        display: none;
+    }
+    .sub_toggle li a {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    
+    /* mob banner */
+    .wrap_banner {
+        height: 450px;
+    }
+    .wrap_banner .inner_banner {
+        background-position: 45% 60%;
+    }
+    .wrap_banner .txt_banner {
+        padding: 150px 50px 0;
+    }
+    .txt_banner .tit_name {
+        display: block;
+        padding-left: 5px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff;
+    }
+    .txt_banner .txt_say {
+        font-size: 30px;
+    }
+    
+    /* mob 3단 영역 */
+    .list_intro li {
+        width: 100%;
+    }
 }

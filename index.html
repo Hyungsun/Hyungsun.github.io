@@ -33,17 +33,39 @@
                         <a class="link_gnb link_gnb1" href="javascript:;" onclick="alert('현재 준비중 입니다.');"> <span class="txt_menu">살펴보기</span> </a>
                     </li>
                     <li><a class="link_gnb link_gnb2" href="javascript:void(0);"><span class="txt_menu">포트폴리오</span></a>
-                    <div class="list_sub">
-                        <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub fst"><span class="txt_menu">수페르가</span></a>
-                        <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">케라시스</span></a>
-                        <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">진인해운</span></a>
-                        <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">에이치 앤 티</span></a>
-                        <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">카페더블스틱</span></a>
-                    </div>
+                        <div class="list_sub"> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub fst"><span class="txt_menu">수페르가</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">케라시스</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">진인해운</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">에이치 앤 티</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">카페더블스틱</span></a> </div>
                     </li>
                     <li><a class="link_gnb link_gnb3" href="javascript:;" onclick="alert('현재 준비중 입니다.');"><span class="txt_menu">갤러리</span></a></li>
                     <li><a class="link_gnb link_gnb4" href="javascript:;" onclick="alert('현재 준비중 입니다.');"><span class="txt_menu">연락하기</span></a></li>
                 </ul>
+            </div>
+        </div>
+        <div id="mobHead" class="mob_menu" style="width:100%; height:50px; background-color:#fff;">
+            <div class="wrap_head">
+                <a href="index.html" class="mob_logo"> <img src="./img/logo_black.png" alt="MOB로고"> </a>
+                <button id="toggle" class="toggle-btn">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </button>
+                <div class="drop_toggle">
+                    <ui class="clearfix">
+                        <li><a href="">살펴보기</a></li>
+                        <li><a href="javascript:void(0)" class="open_toggle">포트폴리오</a>
+                            <div class="sub_toggle">
+                               <ul class="clearfix">
+                                <li><a href="">수페르가</a></li>
+                                <li><a href="">케라시스</a></li>
+                                <li><a href="">진인해운</a></li>
+                                <li><a href="">에이치 앤 티</a></li>
+                                <li><a href="">카페더블스틱</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">갤러리</a></li>
+                        <li><a href="">연락하기</a></li>
+                    </ui>
+                </div>
             </div>
         </div>
         <!-- //zionHead -->
@@ -66,11 +88,11 @@
                     <h3 class="screen_out">포트폴리오 주 내용</h3>
                     <ul class="list_intro">
                         <li><a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_intro link_moreview"><strong class="tit_intro">이력서 훑어보기</strong>
-                        <img src="./img/bg_moreview.jpg" alt="더알아보기"></a></li>
+                        <img src="./img/bg_moreview.jpg" alt="더알아보기" class="img_inside"></a></li>
                         <li><a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_intro link_gallery"><strong class="tit_intro">포트폴리오 사이트</strong>
-                        <img src="./img/bg_portfolio.jpg" alt="포트폴리오"></a></li>
+                        <img src="./img/bg_portfolio.jpg" alt="포트폴리오" class="img_inside"></a></li>
                         <li><a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_intro link_call"><strong class="tit_intro">연락하기</strong>
-                        <img src="./img/bg_call.jpg" alt="연락하기"></a></li>
+                        <img src="./img/bg_call.jpg" alt="연락하기" class="img_inside"></a></li>
                     </ul>
                 </div>
             </div>
@@ -100,7 +122,6 @@
     <script type="text/javascript" src="./scripts/pc.js"></script>
     <!-- JS Implementing Plugins -->
     <script type="text/javascript">
-        
     </script>
 </body>
 
