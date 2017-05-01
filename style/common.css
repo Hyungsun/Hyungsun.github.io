@@ -694,4 +694,23 @@ body {
     .list_intro li {
         width: 100%;
     }
+    
+    /* footer padding 초기화 */
+    .footer_portfolio .footer_info {
+    padding:0;
+    }
+}
+
+@media all and (max-width:415px) {
+    .wrap_banner .inner_banner {
+        background-position: 52% 60%;
+    }
+    
+    .wrap_banner .txt_banner {
+        padding: 150px 25px 0;
+    }
+    
+    .txt_banner .txt_say {
+        font-size: 26px;
+    }
 }
