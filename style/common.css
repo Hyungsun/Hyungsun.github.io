@@ -333,7 +333,8 @@ body {
 
 .head_type2,
 .head_type3 {
-    background-color: #fff
+    background-color: #fff;
+    border-bottom:1px solid #f1f1f1;
 }
 
 .head_type2 .link_zion,
@@ -697,7 +698,7 @@ body {
     
     /* footer padding 초기화 */
     .footer_portfolio .footer_info {
-    padding:0;
+        padding:0;
     }
 }
 
