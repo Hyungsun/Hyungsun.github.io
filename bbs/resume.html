@@ -41,7 +41,7 @@
                 </ul>
             </div>
         </div>
-        <div id="mobHead" class="mob_menu" style="width:100%; height:50px; background-color:#fff;">
+        <div id="mobHead" class="mob_menu">
             <div class="wrap_head">
                 <a href="../index.html" class="mob_logo"> <img src="../img/logo_black.png" alt="MOB로고"> </a>
                 <button id="toggle" class="toggle-btn">
@@ -73,10 +73,10 @@
         <!-- zionContent -->
         <div id="zionContent" class="con_resume" role="main">
             <div id="cSub">
-                <div class="resume_banner">
+                <div class="sub_banner">
                     <h3 class="screen_out">포트폴리오 인터뷰</h3>
-                    <div class="inner_banner">
-                        <div class="resume_top"> 나는 퍼블리셔
+                    <div class="inner_banner resume_inner">
+                        <div class="sub_top"> 나는 퍼블리셔
                             <br /><span class="point_one">최형선</span>입니다. </div>
                     </div>
                 </div>
@@ -106,12 +106,12 @@
                                   <i class="fa fa-user" aria-hidden="true"></i>소개
                                 </h2>
                                 <div class="img_profile"> <img src="../img/resume/profile_img.jpg" alt="프로필사진" class="responsive-img">
-                                    <p>세상은 정말 <span style="color:#89eb49;">'어-썸'</span> 합니다.</p>
+                                    <p>"세상은 정말 <span style="color:#89eb49;">'어-썸'</span> 합니다."</p>
                                 </div>
                                 <div class="txt_profile edit-qus">
-                                    <p><span class="question-tit">이름</span> : 최형선</p>
+                                    <p><span class="question-tit">이름</span> : 최형선 / Choi Hyung Sun / 崔炯善</p>
                                     <p><span class="question-tit">생년월일</span> : 93년 02월 21일 &#40;25세&#41;</p>
-                                    <p><span class="question-tit">연락처</span> : 010-5883-7232</p>
+                                    <p><span class="question-tit">연락처</span> : 010-5883-****</p>
                                     <p><span class="question-tit">이메일</span> : winter765@naver.com</p>
                                 </div>
                             </div>
@@ -147,6 +147,24 @@
                             </div>
                         </div>
                         <!--// LISENCE -->
+                        <!--ABILITY-->
+                        <div class="abil_resume">
+                            <div class="item-wrap">
+                                <h2 class="wrap-title">
+                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>업무 능력
+                                </h2>
+                                <div class="txt_abil edit-qus">
+                                <div>
+                                    <div id="bar-1"></div>
+                                    <div id="bar-2"></div>
+                                    <div id="bar-3"></div>
+                                    <div id="bar-4"></div>
+                                    <div id="bar-5"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!--// ABILITY -->
                     </div>
                 </div>
             </div>
@@ -177,6 +195,33 @@
     <script type="text/javascript" src="../scripts/pc.js"></script>
     <!-- JS Implementing Plugins -->
     <script type="text/javascript">
+        $(document).ready(function () {
+            $('#bar-1').jqbar({
+                label: 'HTML5 / CSS3'
+                , value: 80
+                , barColor: '#f16529'
+            });
+            $('#bar-2').jqbar({
+                label: 'Javascript / jQuery'
+                , value: 60
+                , barColor: '#fcdb41'
+            });
+            $('#bar-3').jqbar({
+                label: 'Photoshop'
+                , value: 80
+                , barColor: '#00b1d9'
+            });
+            $('#bar-4').jqbar({
+                label: 'illustration'
+                , value: 80
+                , barColor: '#ff7f18'
+            });
+            $('#bar-5').jqbar({
+                label: '영상 편집'
+                , value: 75
+                , barColor: '#ea77ff'
+            });
+        });
     </script>
 </body>
 

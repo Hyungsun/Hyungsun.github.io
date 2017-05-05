@@ -12,8 +12,12 @@
     padding-right: 15px;
 }
 
-@media (min-width: 1200px){
+@media all and (min-width: 1200px){
     .container{ width:930px;}
+}
+
+@media all and (min-width: 768px){
+    .container{ width:720px;}
 }
 
 .crumbs-title .container:before,
@@ -93,10 +97,9 @@
 
 /* RESUME CSS */
 
-.resume_banner .inner_banner {
+.sub_banner .inner_banner {
     width: 100%;
     height: 500px;
-    background-image: url(../img/resume/resume_bg.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -104,7 +107,11 @@
     background-color: #000;
 }
 
-.resume_banner .resume_top {
+.resume_inner {
+    background-image: url(../img/resume/resume_bg.jpg);
+}
+
+.sub_banner .sub_top {
     width: 960px;
     margin: 0 auto;
     padding-top: 180px;
@@ -113,11 +120,41 @@
     color: #fff;
 }
 
-.resume_banner .resume_top .point_one {
+.sub_banner .sub_top .point_one {
     color: #afffd5;
 }
 
+@media all and (max-width:1050px) {
+    .sub_banner .sub_top {
+        width:780px;
+        font-size:35px;
+    }
+}
 
+@media all and (max-width:768px) {
+    .sub_banner .inner_banner {
+    height: 350px;
+    }
+    .sub_banner .sub_top {
+        width:640px;
+        font-size:30px;
+        padding-top:180px;
+        line-height:48px;
+    }
+}
+
+@media all and (max-width:480px) {
+    .sub_banner .inner_banner {
+    height: 250px;
+    }
+    
+    .sub_banner .sub_top {
+        width:310px;
+        font-size:20px;
+        padding-top:140px;
+        line-height: 30px;
+    }
+}
 /* resume main content */
 
 .wrap_resume {
@@ -130,13 +167,12 @@
     background-color:#fff;
 }
 
-.wrap_resume .edu_resume {
+.wrap_resume .edu_resume,
+.wrap_resume .abil_resume{
     background-color:#f9f9f9;    
 }
 
-.profile-wrap{
-    
-}
+
 
 .item-wrap{
     width: 930px;
@@ -190,13 +226,47 @@
 }
 
 .item-wrap .txt_edu,
-.item-wrap .txt_lise{
+.item-wrap .txt_lise,
+.item-wrap .txt_abil{
     width:400px;
 }
 
+@media all and (max-width:768px) {
+    .item-wrap {
+        width:700px;
+        padding:30px;
+    }
+}
+
+@media all and (max-width:480px) {
+    .item-wrap {
+        width:100%;
+        padding:30px 0;
+    }
+    
+    
+}
 .rota-i {
     color:#494949;
     font-size:12px;
     margin-right:8px;
     transform: rotate(-45deg);
 }
+
+.jqbar.horizontal span
+{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color:#494949;
+}
+.jqbar.horizontal .bar-percent
+{
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+
