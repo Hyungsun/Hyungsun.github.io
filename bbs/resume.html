@@ -16,7 +16,7 @@
     <!--ASSTES -->
     <link rel="stylesheet" href="../style/common.css" />
     <link rel="stylesheet" href="../style/style.css" />
-    <title>Ch's Web protfolio</title>
+    <title>Home &#62; 프로필</title>
 </head>
 
 <body class="ko">
@@ -33,11 +33,11 @@
                     <li class="fst">
                         <a class="link_gnb link_gnb1" href="resume.html"> <span class="txt_menu">프로필</span> </a>
                     </li>
-                    <li><a class="link_gnb link_gnb2" href="javascript:void(0);"><span class="txt_menu">포트폴리오</span></a>
+                    <li><a class="link_gnb link_gnb2" href="../portfolio/index.html"><span class="txt_menu">포트폴리오</span></a>
                         <div class="list_sub"> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub fst"><span class="txt_menu">수페르가</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">케라시스</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">진인해운</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">에이치 앤 티</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">카페더블스틱</span></a> </div>
                     </li>
-                    <li><a class="link_gnb link_gnb3" href="javascript:;" onclick="alert('현재 준비중 입니다.');"><span class="txt_menu">갤러리</span></a></li>
-                    <li><a class="link_gnb link_gnb4" href="javascript:;" onclick="alert('현재 준비중 입니다.');"><span class="txt_menu">연락하기</span></a></li>
+                    <li><a class="link_gnb link_gnb3" href="./gallery.html"><span class="txt_menu">갤러리</span></a></li>
+                    <li><a class="link_gnb link_gnb4" href="./contact.html"><span class="txt_menu">연락하기</span></a></li>
                 </ul>
             </div>
         </div>
@@ -63,8 +63,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="">갤러리</a></li>
-                        <li><a href="">연락하기</a></li>
+                        <li><a href="./gallery.html">갤러리</a></li>
+                        <li><a href="./contact.html">연락하기</a></li>
                     </ui>
                 </div>
             </div>
@@ -76,8 +76,10 @@
                 <div class="sub_banner">
                     <h3 class="screen_out">포트폴리오 인터뷰</h3>
                     <div class="inner_banner resume_inner">
-                        <div class="sub_top"> 나는 퍼블리셔
-                            <br /><span class="point_one">최형선</span>입니다. </div>
+                        <div class="container">
+                            <div class="sub_top">나는 퍼블리셔
+                                <br /><span class="point_one">최형선</span>입니다. </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,75 +100,92 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wrap_resume">
+                    <div class="wrap_contant">
                         <!-- PROFILE -->
-                        <div class="profile_resume">
-                            <div class="item-wrap">
-                                <h2 class="wrap-title">
-                                  <i class="fa fa-user" aria-hidden="true"></i>소개
+                        <div class="item-list profile">
+                            <div class="container">
+                                <div class="item-row">
+                                    <h2 class="item-title">
+                                자기소개<i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                 </h2>
-                                <div class="img_profile"> <img src="../img/resume/profile_img.jpg" alt="프로필사진" class="responsive-img">
-                                    <p>"세상은 정말 <span style="color:#89eb49;">'어-썸'</span> 합니다."</p>
-                                </div>
-                                <div class="txt_profile edit-qus">
-                                    <p><span class="question-tit">이름 : </span>최형선 / Choi Hyung Sun / 崔炯善</p>
-                                    <p><span class="question-tit">생년월일 : </span>93년 02월 21일 &#40;25세&#41;</p>
-                                    <p><span class="question-tit">연락처 : </span>010-5883-****</p>
-                                    <p><span class="question-tit">이메일 : </span>winter765@naver.com</p>
+                                    <div class="item-wrap">
+                                        <div class="img_profile"> <img src="../img/resume/profile_img.jpg" alt="프로필사진" class="responsive-img">
+                                            <p>"세상은 정말 <span style="color:#89eb49;">'어-썸'</span> 합니다."</p>
+                                        </div>
+                                        <div class="txt_profile edit-qus">
+                                            <p><span class="question-tit">이름 : </span>최형선 / Choi Hyung Sun / 崔炯善</p>
+                                            <p><span class="question-tit">생년월일 : </span>93년 02월 21일 &#40;25세&#41;</p>
+                                            <p><span class="question-tit">연락처 : </span>010-5883-****</p>
+                                            <p><span class="question-tit">이메일 : </span>winter765@naver.com</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!--// PROFILE -->
-                        <!-- EDUCATION -->
-                        <div class="edu_resume">
-                            <div class="item-wrap">
-                                <h2 class="wrap-title">
-                                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>학력 및 교육과정 
+                        <!-- EDUCATION  -->
+                        <div class="item-list edu">
+                            <div class="container">
+                                <div class="item-row">
+                                    <h2 class="item-title">
+                                  학력 및 교육과정<i class="fa fa-angle-double-right" aria-hidden="true"></i> 
                                 </h2>
-                                <div class="txt_edu edit-qus">
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2016년 6월</span> &#91;NCS기반&#93; 디지털 웹 디자인&#91;웹 퍼블리셔&#93; 과정 수료</p>
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2016년 2월</span> 경기과학기술대학교 미디어디자인 전문학사 취득</p>
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2012년 2월</span> 수원공업고등학교 디지털게임과 졸업</p>
+                                    <div class="item-wrap">
+                                        <div class="txt_edu edit-qus">
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2016년 6월</span> &#91;NCS기반&#93; 디지털 웹 디자인&#91;웹 퍼블리셔&#93; 과정 수료</p>
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2016년 2월</span> 경기과학기술대학교 미디어디자인 전문학사 취득</p>
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2012년 2월</span> 수원공업고등학교 디지털게임과 졸업</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!--// EDUCATION -->
-                        <!-- LISENCE -->
-                        <div class="lise_resume">
-                            <div class="item-wrap">
-                                <h2 class="wrap-title">
-                                    <i class="fa fa-id-card" aria-hidden="true"></i>보유 자격증
+                        <!-- LISENCE  -->
+                        <div class="item-list lise">
+                            <div class="container">
+                                <div class="item-row">
+                                    <h2 class="item-title">
+                                  보유 자격증<i class="fa fa-angle-double-right" aria-hidden="true"></i> 
                                 </h2>
-                                <div class="txt_lise edit-qus">
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2012년 4월</span> 한국생산성본부 GTQ2급</p>
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2011년 8월</span> 경기지방경찰청 운전면허 1종보통</p>
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2011년 7월</span> 한국산업인력공단 웹 디자인 기능사</p>
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2011년 7월</span> 한국산업인력공단 정보처리기능사</p>
-                                    <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2010년 12월</span> 한국산업인력공단 컴퓨터활용능력2급</p>
+                                    <div class="item-wrap">
+                                        <div class="txt_lise edit-qus">
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2012년 4월</span> 한국생산성본부 GTQ2급</p>
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2011년 8월</span> 경기지방경찰청 운전면허 1종보통</p>
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2011년 7월</span> 한국산업인력공단 웹 디자인 기능사</p>
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2011년 7월</span> 한국산업인력공단 정보처리기능사</p>
+                                            <p><span class="monthly-tit"><i class="fa fa-square rota-i" aria-hidden="true"></i>2010년 12월</span> 한국산업인력공단 컴퓨터활용능력2급</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!--// LISENCE -->
-                        <!--ABILITY-->
-                        <div class="abil_resume">
-                            <div class="item-wrap">
-                                <h2 class="wrap-title">
-                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>업무 능력
+                        <!-- ABILITY-- -->
+                        <div class="item-list abil">
+                            <div class="container">
+                                <div class="item-row">
+                                    <h2 class="item-title">
+                                  업무 능력<i class="fa fa-angle-double-right" aria-hidden="true"></i> 
                                 </h2>
-                                <div class="txt_abil edit-qus">
-                                <div>
-                                    <div id="bar-1"></div>
-                                    <div id="bar-2"></div>
-                                    <div id="bar-3"></div>
-                                    <div id="bar-4"></div>
-                                    <div id="bar-5"></div>
+                                    <div class="item-wrap">
+                                        <div class="txt_abil edit-qus">
+                                            <div>
+                                                <div id="bar-1"></div>
+                                                <div id="bar-2"></div>
+                                                <div id="bar-3"></div>
+                                                <div id="bar-4"></div>
+                                                <div id="bar-5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <!--// ABILITY -->
                     </div>
                 </div>
+                <!--// mArticle -->
             </div>
             <!--// MAIN END -->
         </div>

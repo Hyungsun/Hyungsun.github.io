@@ -1,40 +1,47 @@
 /* 공통 CRUMBS  */
 
-.crumbs-title {
-    background: url(../img/skin/crumb_line.jpg) left 49% repeat-x;
-    padding: 30px 0;
-}
-
-.crumbs-title .container {
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
-@media all and (min-width: 1200px) {
-    .container {
-        width: 930px;
-    }
-}
-
-@media all and (min-width: 768px) {
-    .container {
-        width: 720px;
-    }
+.container:before,
+.container:after {
+    display: table;
+    content: '';
+    clear: both;
 }
 
 @media all and (max-width:420px) {
     .hidden-xs {
-        display: none;
+        display: none !important;
     }
 }
 
-.crumbs-title .container:before,
-.crumbs-title .container:after {
-    display: table;
-    content: '';
-    clear: both;
+@media all and (min-width: 770px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.crumbs-title {
+    background: url(../img/skin/crumb_line.jpg) left 49% repeat-x;
+    padding: 30px 0;
+    margin-bottom:40px;
 }
 
 .page-title {
@@ -42,7 +49,6 @@
     font-size: 24px;
     line-height: 1.1;
     color: #494949;
-    font-weight: 600;
     margin: 3px 0;
 }
 
@@ -125,9 +131,7 @@
 }
 
 .sub_banner .sub_top {
-    width: 960px;
-    margin: 0 auto;
-    padding-top: 180px;
+    padding: 180px 30px 0;
     font-size: 42px;
     line-height: 80px;
     color: #fff;
@@ -137,45 +141,52 @@
     color: #afffd5;
 }
 
-
-/* resume main content */
-
-.wrap_resume {
-    width: 100%;
-    height: auto;
-    position: relative;
+.item-list.profile{
+    background-color:#fff;
 }
 
-.wrap_resume .profile_resume {
-    background-color: #fff;
+.item-list {
+padding-bottom:30px;    
 }
 
-.wrap_resume .edu_resume,
-.wrap_resume .abil_resume {
+.item-list.edu,
+.item-list.abil {
     background-color: #f9f9f9;
 }
 
-.item-wrap {
-    width: 930px;
-    margin: 0 auto;
-    padding: 30px 15px;
-}
-
-.item-wrap .wrap-title {
-    font-size: 25px;
-    font-weight: 600;
-    padding: 0 15px;
+.item-title {
     display: inline-block;
-    color: #494949;
-    letter-spacing: -2px;
+    color:#393939;
+    border-bottom: 5px solid #ffdd6a;
+    font-size: 2.1em;
+    font-weight: 600;
+    height: 29px;
+    margin:20px 15px 0;
 }
 
-.item-wrap .wrap-title i {
-    padding-right: 15px;
+.item-title i {
+    padding-left: 15px;
 }
 
-.item-wrap .img_profile {
-    margin: 15px 0;
+.item-row {
+    margin-right: -15px;
+    margin-left: -15px;  
+}
+
+.item-wrap {
+    padding:20px 0;
+}
+
+.item-wrap:after,
+.item-wrap:before {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.item-wrap .img_profile{
+    margin-top:10px; 
+    padding-top:20px;
 }
 
 .item-wrap .img_profile p {
@@ -205,6 +216,7 @@
     width: 260px;
 }
 
+
 .item-wrap .txt_edu,
 .item-wrap .txt_lise,
 .item-wrap .txt_abil {
@@ -233,50 +245,19 @@
     margin-bottom: 5px;
 }
 
-
-/* 반응형 _ RESUME */
-
-@media all and (max-width:1050px) {
-    .sub_banner .sub_top {
-        width: 780px;
-        font-size: 35px;
-    }
-}
-
-@media all and (max-width:768px) {
-    .sub_banner .inner_banner {
-        height: 350px;
-    }
-    .sub_banner .sub_top {
-        width: 640px;
-        font-size: 30px;
-        padding-top: 180px;
-        line-height: 48px;
-    }
-    .item-wrap {
-        width: 700px;
-        padding: 30px;
-    }
-}
-
 @media all and (max-width:480px) {
-    .sub_banner .inner_banner {
-        height: 250px;
+    .responsive-img {
+     max-width:240px;    
     }
-    .sub_banner .sub_top {
-        width: 310px;
-        font-size: 20px;
-        padding-top: 140px;
-        line-height: 30px;
+    
+    .item-title{
+    margin:20px 25px 0;   
     }
-    .item-wrap {
-        width: 100%;
-        padding: 30px 0;
-    }
+    
     .item-wrap .txt_edu,
     .item-wrap .txt_lise,
     .item-wrap .txt_abil {
-        width: 320px;
+        width: 230px;
     }
     .item-wrap .edit-qus p>span {
         display: block;
@@ -284,37 +265,14 @@
         margin: 15px 0 5px;
     }
     .item-wrap .wrap-title {
+        font-size:18px;
         text-align: center;
         display: block;
     }
     
     .item-wrap .img_profile p {
-    font-size: 15px;
+        font-size: 15px;
     }
 }
 
-@media all and (max-width:320px) {
-    .sub_banner .inner_banner {
-        background-position: 30% 60%;
-    }
-    
-    .sub_banner .sub_top {
-        width: 270px;
-    }
-    
-    .item-wrap .edit-qus p>span {
-        font-size: 14px;
-    }
-    .item-wrap .edit-qus p {
-        font-size: 11px;
-    }
-    .item-wrap .txt_edu,
-    .item-wrap .txt_lise,
-    .item-wrap .txt_abil {
-        width: 270px;
-    }
-    
-    .responsive-img {
-        max-width:250px;
-    }
-}
+
