@@ -113,7 +113,11 @@
     height: auto;
 }
 
-
+@media all and (max-width:480px) {
+    .responsive-img {
+     max-width:270px;    
+    }
+}
 /* RESUME CSS */
 
 .sub_banner .inner_banner {
@@ -245,9 +249,30 @@ padding-bottom:30px;
     margin-bottom: 5px;
 }
 
+
+@media all and (max-width:770px) {
+    .sub_banner .inner_banner {
+    height: 350px;
+    background-position: 25% 60%;
+    }
+
+    .sub_banner .sub_top {
+    padding: 195px 35px 0;
+    font-size: 25px;
+    line-height: 35px;
+    }
+}
+
 @media all and (max-width:480px) {
-    .responsive-img {
-     max-width:240px;    
+    .sub_banner .inner_banner {
+    height: 250px;
+    background-position: 25% 60%;
+    }
+
+    .sub_banner .sub_top {
+    padding: 130px 10px 0;
+    font-size: 20px;
+    line-height: 30px;
     }
     
     .item-title{
@@ -257,7 +282,7 @@ padding-bottom:30px;
     .item-wrap .txt_edu,
     .item-wrap .txt_lise,
     .item-wrap .txt_abil {
-        width: 230px;
+        width: 290px;
     }
     .item-wrap .edit-qus p>span {
         display: block;
