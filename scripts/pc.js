@@ -69,6 +69,28 @@ $(document).ready(function () {
        $(".sub_toggle").slideToggle(); 
     });
     
+    
+    /* 스크롤시 scroll Top 이동 효과*/
+     var    win = $(window),
+            winWidth = win.width();
+  
+        win.scroll(function() {
+            if ($(this).scrollTop() > 500) {
+            $('.scroll-up-button').fadeIn();
+        } else {
+            $('.scroll-up-button').fadeOut();
+        }
+    });
+
+    var scrollerButton = $('<div class="scroll-input-div"><a class="scroll-up-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>');
+        scrollerButton.click(function() {
+            $('html,body').animate({scrollTop: 0}, 800);
+    return false;
+  });
+
+  $("#zionWrap").append(scrollerButton); 
+    
+});    
     /*********************************************
 
 Author : EGrappler.com
@@ -154,4 +176,3 @@ License: http://www.egrappler.com/license.
         }
     });
     })(jQuery);
-});

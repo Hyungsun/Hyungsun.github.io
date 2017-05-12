@@ -86,7 +86,7 @@
 }
 
 .page-crumbs ul > li a {
-    color: #494949;
+    color: #797979;
 }
 
 .page-crumbs ul > li a:hover {
@@ -125,6 +125,19 @@
     }
 }
 
+/* 각 페이지별 SUB BANNER */
+
+.sub_banner .resume_inner {
+    background-image: url(../img/resume/resume_bg.jpg);
+}
+
+.sub_banner .portfolio_inner {
+    background-image: url(../img/portfolio/portfolio_bg.jpg);
+}
+
+.sub_banner .superga_inner {
+    background-image: url(../img/portfolio/portSuperga_bg.jpg);
+}
 
 /* RESUME CSS */
 
@@ -136,10 +149,6 @@
     background-size: cover;
     background-position: 20% 60%;
     background-color: #000;
-}
-
-.resume_inner {
-    background-image: url(../img/resume/resume_bg.jpg);
 }
 
 .sub_banner .sub_top {
@@ -170,7 +179,7 @@
     display: inline-block;
     color: #393939;
     border-bottom: 5px solid #ffdd6a;
-    font-size: 2.1em;
+    font-size: 23px;
     font-weight: 600;
     height: 29px;
     margin: 20px 15px 0;
@@ -304,15 +313,13 @@
 
 /* PORTFOLIO CSS */
 
-.portfolio_inner {
-    background-image: url(../img/portfolio/portfolio_bg.jpg);
-}
-
 .img-list {
     padding: 0 30px;
 }
 
-.folioWrap li{margin-bottom:25px;}
+.folioWrap li {
+    margin-bottom: 25px;
+}
 
 .item-folio {
     position: relative;
@@ -339,24 +346,24 @@
     background-repeat: no-repeat;
 }
 
-.liThumb#superga{
-    background-image:url("../img/portfolio/superga_thumb.jpg");
+.liThumb#superga {
+    background-image: url("../img/portfolio/superga_thumb.jpg");
 }
 
-.liThumb#kerasys{
-    background-image:url("../img/portfolio/kerasys_thumb.jpg");
+.liThumb#kerasys {
+    background-image: url("../img/portfolio/kerasys_thumb.jpg");
 }
 
-.liThumb#qinin{
-    background-image:url("../img/portfolio/qinin_thumb.jpg");
+.liThumb#qinin {
+    background-image: url("../img/portfolio/qinin_thumb.jpg");
 }
 
-.liThumb#hntc{
-    background-image:url("../img/portfolio/hntc_thumb.jpg");
+.liThumb#hntc {
+    background-image: url("../img/portfolio/hntc_thumb.jpg");
 }
 
-.liThumb#cds{
-    background-image:url("../img/portfolio/cds_thumb.jpg");
+.liThumb#cds {
+    background-image: url("../img/portfolio/cds_thumb.jpg");
 }
 
 .liContants {
@@ -369,6 +376,7 @@
     font-weight: 600;
     font-size: 15px;
     display: block;
+    letter-spacing: -1px;
 }
 
 .liContitle a:hover {
@@ -382,6 +390,7 @@
     padding-top: 10px;
     line-height: 200%;
     min-height: 100px;
+    letter-spacing: -1px;
 }
 
 .liContants hr {
@@ -393,13 +402,13 @@
 }
 
 .liContants .edit_project {
-    font-size:11px;
-    color:#696969;
+    font-size: 11px;
+    color: #696969;
 }
 
-.edit_project .title{
-    margin-right:15px;
-    font-size:12px;
+.edit_project .title {
+    margin-right: 15px;
+    font-size: 12px;
 }
 
 @media all and (min-width:992px) {
@@ -408,3 +417,205 @@
         width: 33.33333333%;
     }
 }
+
+@media all and (max-width:320px) {
+    .liContitle .ENGname {
+        display: block;
+        font-size:13px;
+    }
+}
+
+/* PORTFOLIO SUPERGA CSS */
+
+.suprega .ENGname {
+    font-size:17px;
+    color:#001442;
+}
+
+.explain-area {
+    padding-left:15px;
+    padding-right: 15px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.area-title {
+    margin:10px 0;
+    font-size:18px;
+    display: inline-block;
+    font-weight: 600;
+    color:#494949;
+}
+
+.area-title i {
+   padding-right:8px;  
+}
+
+.area-text {
+    padding:10px 0;
+}
+
+.area-text p {
+    padding-top:12px;
+    font-size:14px;
+    color:#393939;
+}
+
+.area-text p > .txt-title {
+    font-weight: 600;
+}
+
+.visual-area {
+    width:100%;
+    background-color:#ffdd6a;
+    position: relative;
+}
+
+.visual-area .visualIMGTitle {
+	position:absolute;
+	z-index:10;
+	left:0;
+	height:100%;
+	width:100%;
+	max-width:1170px;
+    margin-left:300px;
+}
+
+.visual-area .visualIMGTitle > h3{
+ 	position:absolute;
+	bottom:25px;
+	color:#fff;
+	font-weight:400;
+	font-size:35px;
+	z-index:20;
+	text-shadow: 0px 0px 5px #333;   
+}
+
+.visual-div {
+    position:relative;
+	height:400px;
+	display:inline-block;
+	background:url("../img/portfolio/superga/superga_visual1.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+
+@media all and (min-width:770px){
+.visual-wid {
+    width:66.66666667%;
+    float: left;
+    }
+}
+
+
+.area-colorChip {
+    width:100%;
+    padding-top:20px;
+}
+
+.area-colorChip dl {
+    width:100%;
+}
+.area-colorChip dt {
+    clear: both;
+    float: left;
+    width: 70px;
+    padding-top: 17px;
+    font-size:13px;
+    color:#494949;
+    font-weight: 600;
+}
+
+.area-colorChip dd {
+    float: left;
+    width: 80%;
+    padding-top: 15px;
+}
+
+.area-colorChip dd p {
+    float: left;
+    width: 70px;
+    font-weight: 500;
+    color: #ffdd6a;
+    padding:0 0 0 25px;
+}
+
+.area-colorChip div {
+    width: 110px;
+    height: 25px;
+    float: left;
+}
+
+div.main-sup {
+    background-color:#333;
+}
+
+div.impact-sup {
+    background-color:#000e46;
+}
+
+div.sub-sup {
+    background-color:#777;
+}
+
+
+.contWrap h4 {
+    font-size:16px;
+    padding:25px 0;
+    display: inline-block;
+    color:#696969;
+}
+
+
+.conItem {
+    padding:25px 0;
+}
+
+.conItem img{
+    max-width:300px;
+    margin:0 auto;
+    padding-bottom: 8px;
+    border-bottom:5px solid #ffdd6a;
+}
+
+.conItem p {
+    display: block;
+    font-size:13px;
+    text-align: center;
+    padding:10px 0;
+}
+
+.conItem .mockupLi,
+.conItem .mockupName {
+    padding:0;
+    width:100%;
+}
+
+.mockupLi li{
+    float: left;
+    width: calc(16% - 10px);
+    margin-right: 20px;
+    text-align: center;
+}
+
+.mockupLi li:last-child,
+.mockupName li:last-child {
+    margin-right:0;
+}
+
+.mockupLi li img {
+    width:100%;
+    height:auto;
+    max-width:200px;
+    border-radius: 0;
+}
+
+.mockupName li{
+    float: left;
+    width: calc(33% - 11px);
+    margin-right: 20px;
+    text-align: center;
+    font-size:13px;
+    padding:10px 0;
+}
+
+
