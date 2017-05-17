@@ -30,11 +30,11 @@
             <div id="zionGnb" class="gnb_portfolio" role="navigation">
                 <h2 class="screen_out">포트폴리오 메뉴</h2>
                 <ul class="list_gnb">
-                    <li class="fst">
-                        <a class="link_gnb link_gnb1" href="resume.html"> <span class="txt_menu">프로필</span> </a>
+                    <li class="fst on">
+                        <a class="link_gnb link_gnb1" href="resume.html"> <span class="txt_menu on">프로필</span> </a>
                     </li>
                     <li><a class="link_gnb link_gnb2" href="../portfolio/index.html"><span class="txt_menu">포트폴리오</span></a>
-                        <div class="list_sub"> <a href="../portfolio/port_superga.html" class="link_sub fst"><span class="txt_menu">수페르가</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">케라시스</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">진인해운</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">에이치 앤 티</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">카페더블스틱</span></a> </div>
+                        <div class="list_sub"> <a href="../portfolio/index.html" class="link_sub fst"><span class="txt_menu">전체보기</span></a><a href="../portfolio/port_superga.html" class="link_sub"><span class="txt_menu">수페르가</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">케라시스</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">진인해운</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">에이치 앤 티</span></a> <a href="javascript:;" onclick="alert('현재 준비중 입니다.');" class="link_sub"><span class="txt_menu">카페더블스틱</span></a> </div>
                     </li>
                     <li><a class="link_gnb link_gnb3" href="./gallery.html"><span class="txt_menu">갤러리</span></a></li>
                     <li><a class="link_gnb link_gnb4" href="./contact.html"><span class="txt_menu">연락하기</span></a></li>
@@ -72,17 +72,15 @@
         </div>
         <!-- //zionHead -->
         <!-- zionContent -->
-        <div id="zionContent" class="con_resume" role="main">
+        <div id="zionContent" class="con_profile" role="main">
             <div id="cSub">
-                <div class="sub_banner">
-                    <h3 class="screen_out">포트폴리오 인터뷰</h3>
                     <div class="inner_banner resume_inner">
                         <div class="container">
-                            <div class="sub_top">나는 퍼블리셔
-                                <br /><span class="point_one">최형선</span>입니다. </div>
+                            <div class="sub_top">
+                            <p>'나'는 <br class="mnodis" /> 언제나 새로운 경험을 원하는<br /> 사람입니다.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                </div>    
             </div>
             <!--// SUB END -->
             <div id="cMain">
@@ -111,7 +109,7 @@
                                 </h2>
                                     <div class="item-wrap">
                                         <div class="img_profile"> <img src="../img/resume/profile_img.jpg" alt="프로필사진" class="responsive-img">
-                                            <p>"세상은 정말 <span style="color:#89eb49;">'어-썸'</span> 합니다."</p>
+                                            <p>"세상은 정말 <span style="color:#ffd445;">'어-썸'</span> 합니다."</p>
                                         </div>
                                         <div class="txt_profile edit-qus">
                                             <p><span class="question-tit">이름 : </span>최형선 / Choi Hyung Sun / 崔炯善</p>
@@ -241,6 +239,7 @@
                 , value: 75
                 , barColor: '#ea77ff'
             });
+            headStyle();
         });
     </script>
 </body>

@@ -1,4 +1,9 @@
-/* 공통 CRUMBS  */
+/* 메인 / 프로필 페이지 외 메뉴 상단 여백 CSS */
+.con_sub {
+    padding-top:60px;
+}
+
+/* 공통 CRUMBS 및 CONTAINER CSS  */
 
 .container {
     padding-right: 15px;
@@ -125,41 +130,32 @@
     }
 }
 
-/* 각 페이지별 SUB BANNER */
-
-.sub_banner .resume_inner {
-    background-image: url(../img/resume/resume_bg.jpg);
-}
-
-.sub_banner .portfolio_inner {
-    background-image: url(../img/portfolio/portfolio_bg.jpg);
-}
-
-.sub_banner .superga_inner {
-    background-image: url(../img/portfolio/portSuperga_bg.jpg);
-}
-
 /* RESUME CSS */
 
-.sub_banner .inner_banner {
+.con_profile #cSub {
+    width:100%; 
+    background-color:#ffdd6a;
+    position: relative;
+}
+
+.inner_banner{
     width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
+    height: 450px;
+    background:url(../img/resume/resume_bg.jpg) no-repeat 50% 0 #303133;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: 20% 60%;
-    background-color: #000;
+    background-position: 50% 50%;
 }
 
-.sub_banner .sub_top {
-    padding: 180px 30px 0;
-    font-size: 42px;
-    line-height: 80px;
-    color: #fff;
-}
-
-.sub_banner .sub_top .point_one {
-    color: #afffd5;
+.resume_inner p {
+	position:absolute;
+	bottom:70px;
+	color:#fff;
+	font-weight:400;
+	font-size:35px;
+	z-index:20;
+	text-shadow: 0px 0px 5px #333;
+    padding: 0 10px;
 }
 
 .item-list.profile {
@@ -266,26 +262,23 @@
 }
 
 @media all and (max-width:770px) {
-    .sub_banner .inner_banner {
-        height: 350px;
-        background-position: 25% 60%;
+   .inner_banner {
+        height: 300px;
     }
-    .sub_banner .sub_top {
-        padding: 195px 35px 0;
+    .resume_inner p {
         font-size: 25px;
-        line-height: 35px;
     }
 }
 
 @media all and (max-width:480px) {
-    .sub_banner .inner_banner {
+   .inner_banner {
         height: 250px;
-        background-position: 25% 60%;
     }
-    .sub_banner .sub_top {
-        padding: 130px 10px 0;
-        font-size: 20px;
-        line-height: 30px;
+    .resume_inner p {
+        font-size: 18px;
+    }
+    .resume_inner p .mnodis {
+        display: none;
     }
     .item-title {
         margin: 20px 25px 0;
@@ -411,10 +404,65 @@
     font-size: 12px;
 }
 
+/* port index work step*/
+
+.step-wrap {
+    width:100%;
+    background-color:#f0f0f0;
+}
+
+.step-title {
+    font-size:24px;
+    text-align: center;
+    margin:10px 0;
+    color:#FF5200;
+}
+
+.step-cont .step-ment {
+    font-size:14px;
+    text-align: center;
+    margin:0 0 15px;
+}
+
+.step-cont .stepLi {
+    display:inline-block;
+	padding:30px 0px;
+	width:100%;
+}
+
+.stepLi i{
+    font-size:60px;
+    width:100%;
+    text-align: center;
+}
+
+.stepLi span {
+    clear:both;
+    display: block;
+	width:100%;
+	font-size:16px;
+	color:#494949;
+	padding-top:15px;
+	font-weight:700;
+	letter-spacing:0px;
+    text-align: center;
+}
+
+.stepLi > li > p {
+    font-size:13px;
+    margin-top:15px;
+    color:#696969;
+    letter-spacing: -2px;
+}
+
 @media all and (min-width:992px) {
     .size_4 {
         float: left;
         width: 33.33333333%;
+    }
+    .size_3 {
+        float:left;
+        width:25%;
     }
 }
 
@@ -557,7 +605,6 @@ div.sub-sup {
     background-color:#777;
 }
 
-
 .contWrap h4 {
     font-size:16px;
     padding:25px 0;
@@ -617,5 +664,4 @@ div.sub-sup {
     font-size:13px;
     padding:10px 0;
 }
-
 
