@@ -537,43 +537,25 @@ div.graMove {
 
 
 /* PORTFOLIO SUPERGA CSS */
-
-.suprega .ENGname {
-    font-size: 17px;
-    color: #001442;
-}
-
-.explain-area {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.area-title {
-    margin: 10px 0;
-    font-size: 18px;
-    display: inline-block;
-    font-weight: 600;
-    color: #494949;
-}
-
-.area-title i {
-    padding-right: 8px;
-}
-
-.area-text {
-    padding: 10px 0;
-}
-
-.area-text p {
-    padding-top: 12px;
-    font-size: 14px;
+.brand_explan .tit_brand {
+     display: inline-block;
     color: #393939;
+    border-bottom: 5px solid #ffdd6a;
+    font-size: 30px;
+    font-weight: 600;
+    height: 38px;
+    padding-right:60px;
 }
 
-.area-text p > .txt-title {
-    font-weight: 600;
+.brand_explan .dec_brand {
+    padding-top:30px;
+}
+
+.brand_explan .dec_brand > p {
+    font-size: 14px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    color:#595959;
 }
 
 .visual-area {
@@ -618,112 +600,35 @@ div.graMove {
     }
 }
 
-.area-colorChip {
-    width: 100%;
-    padding-top: 20px;
+.step_area .step_list {
+    padding:60px 0;
 }
 
-.area-colorChip dl {
-    width: 100%;
+.step_list+.step_list {
+    border-top:1px solid #e6e6e6;
 }
 
-.area-colorChip dt {
-    clear: both;
-    float: left;
-    width: 70px;
-    padding-top: 17px;
-    font-size: 13px;
-    color: #494949;
-    font-weight: 600;
-}
-
-.area-colorChip dd {
-    float: left;
-    width: 80%;
-    padding-top: 15px;
-}
-
-.area-colorChip dd p {
-    float: left;
-    width: 70px;
+.step_list .tit_step {
+    font-size:25px;
     font-weight: 500;
-    color: #ffdd6a;
-    padding: 0 0 0 25px;
+    letter-spacing: -1px;
 }
 
-.area-colorChip div {
-    width: 110px;
-    height: 25px;
-    float: left;
+.step_list .tit_step span {
+    font-weight:600; 
+    color:#ffdd6a;
 }
 
-div.main-sup {
-    background-color: #333;
+.step_list .dec_step {
+    padding:10px 0;
 }
 
-div.impact-sup {
-    background-color: #000e46;
+.step_list .dec_step p{
+    padding-top: 12px;
+    font-size: 14px;
+    color: #393939
 }
 
-div.sub-sup {
-    background-color: #777;
-}
-
-.contWrap h4 {
-    font-size: 16px;
-    padding: 25px 0;
-    display: inline-block;
-    color: #696969;
-}
-
-.conItem {
-    padding: 25px 0;
-}
-
-.conItem img {
-    max-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 8px;
-    border-bottom: 5px solid #ffdd6a;
-}
-
-.conItem p {
-    display: block;
-    font-size: 13px;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.conItem .mockupLi,
-.conItem .mockupName {
-    padding: 0;
-    width: 100%;
-}
-
-.mockupLi li {
-    float: left;
-    width: calc(16% - 10px);
-    margin-right: 20px;
-    text-align: center;
-}
-
-.mockupLi li:last-child,
-.mockupName li:last-child {
-    margin-right: 0;
-}
-
-.mockupLi li img {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    border-radius: 0;
-}
-
-.mockupName li {
-    float: left;
-    width: calc(33% - 11px);
-    margin-right: 20px;
-    text-align: center;
-    font-size: 13px;
-    padding: 10px 0;
+.step_list .dec_step p span{
+    font-weight: 600;
 }
