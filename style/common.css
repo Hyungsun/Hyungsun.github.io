@@ -174,14 +174,98 @@ var {
 }
 
 
-/* 테이블 caption에 적용 */
-
 /* Cotainer 여백 적용할 때 */
-.cBlank50{
-    width:100% !important;
-    height:50px !important;
-    clear:both !important;
+
+.cBlank50 {
+    width: 100% !important;
+    height: 50px !important;
+    clear: both !important;
 }
+
+
+/* 부트스트랩 CSS 인용 */
+
+.size_2,
+.size_3,
+.size_4,
+.size_6,
+.size_7,
+.size_8,
+.size_9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.size_2,
+.size_3,
+.size_4,
+.size_6,
+.size_7,
+.size_8,
+.size_9 {
+    float: left;
+}
+
+.size_2,
+.size_3,
+.size_4,
+.size_6,
+.size_7,
+.size_8,
+.size_9 {
+    width: 100%;
+}
+
+@media all and (min-width:992px) {
+    .size_9 {
+        width: 75%;
+    }
+    .size_8 {
+        width: 66.66666667%;
+    }
+    .size_7 {
+        width: 58.33333333%;
+    }
+    .size_6 {
+        width: 50%;
+    }
+    .size_4 {
+        width: 33.33333333%;
+    }
+    .size_3 {
+        width: 25%;
+    }
+    .size_2 {
+        width: 16.66666667%;
+    }
+}
+
+@media all and (min-width:770px) {
+    .size_9 {
+        width: 75%;
+    }
+    .size_8 {
+        width: 66.66666667%;
+    }
+    .size_7 {
+        width: 58.33333333%;
+    }
+    .size_6 {
+        width: 50%;
+    }
+    .size_4 {
+        width: 33.33333333%;
+    }
+    .size_3 {
+        width: 25%;
+    }
+    .size_2 {
+        width: 16.66666667%;
+    }
+}
+
 
 /* layout */
 
@@ -332,9 +416,9 @@ body {
     margin-left: 0;
 }
 
-.gnb_portfolio .list_sub .on .txt_menu{
-    border-bottom:1px solid #191919;
-    padding-bottom:5px;
+.gnb_portfolio .list_sub .on .txt_menu {
+    border-bottom: 1px solid #191919;
+    padding-bottom: 5px;
     opacity: .96;
     filter: alpha(opacity=96);
 }
@@ -474,9 +558,9 @@ body {
 }
 
 .scroll-up-button i {
-    font-size:15px;
+    font-size: 15px;
     line-height: 2.2;
-    color:#595959;
+    color: #595959;
     opacity: .75;
     filter: alpha(opacity=75);
 }
@@ -488,9 +572,11 @@ body {
 
 @media all and (max-width:768px) {
     .scroll-up-button {
-        right:15px;
-    } 
+        right: 15px;
+    }
 }
+
+
 /* 메인 */
 
 .wrap_banner {

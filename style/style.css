@@ -1,7 +1,9 @@
 /* 메인 / 프로필 페이지 외 메뉴 상단 여백 CSS */
+
 .con_sub {
-    padding-top:60px;
+    padding-top: 60px;
 }
+
 
 /* 공통 CRUMBS 및 CONTAINER CSS  */
 
@@ -130,60 +132,37 @@
     }
 }
 
+
 /* RESUME CSS */
 
 .con_profile #cSub {
-    width:100%; 
-    background-color:#ffdd6a;
+    width: 100%;
+    background-color: #ffdd6a;
     position: relative;
 }
 
-.inner_banner{
+.inner_banner {
     width: 100%;
     height: 450px;
-    background:url(../img/resume/resume_bg.jpg) no-repeat 50% 0 #303133;
+    background: url(../img/resume/resume_bg.jpg) no-repeat 50% 0 #303133;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .resume_inner p {
-	position:absolute;
-	bottom:70px;
-	color:#fff;
-	font-weight:400;
-	font-size:35px;
-	z-index:20;
-	text-shadow: 0px 0px 5px #333;
+    position: absolute;
+    bottom: 70px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 35px;
+    z-index: 20;
+    text-shadow: 0px 0px 5px #333;
     padding: 0 10px;
 }
 
-.item-list.profile {
-    background-color: #fff;
-}
 
-.item-list {
-    padding-bottom: 30px;
-}
-
-.item-list.edu,
-.item-list.abil {
-    background-color: #f9f9f9;
-}
-
-.item-title {
-    display: inline-block;
-    color: #393939;
-    border-bottom: 5px solid #ffdd6a;
-    font-size: 23px;
-    font-weight: 600;
-    height: 29px;
-    margin: 20px 15px 0;
-}
-
-.item-title i {
-    padding-left: 15px;
-}
+/* 05 18 test */
 
 .item-row {
     margin-right: -15px;
@@ -201,77 +180,176 @@
     clear: both;
 }
 
-.item-wrap .img_profile {
-    margin-top: 10px;
-    padding-top: 20px;
+.wrap_subject {
+    padding: 65px 0;
+    color: #393939;
+    letter-spacing: -1px;
 }
 
-.item-wrap .img_profile p {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 15px;
-    font-size: 20px;
-    color: #494949;
+.wrap_subject+.wrap_subject {
+    border-top: 1px solid #e6e6e6
 }
 
-.item-wrap .edit-qus {
-    margin: 0 auto;
-    padding: 15px 0;
+.wrap_subject .tit_subject {
+    display: inline-block;
+    color: #393939;
+    border-bottom: 5px solid #ffdd6a;
+    font-size: 30px;
+    font-weight: 600;
+    height: 38px;
 }
 
-.item-wrap .edit-qus p {
-    margin: 5px 0;
+.wrap_subject .cont_subject {
+    overflow: hidden;
+    padding: 0 25px;
     font-size: 13px;
 }
 
-.item-wrap .edit-qus p>span {
-    font-weight: 600;
+.wrap_subject .emph_subject {
+    font-weight: 500;
+    font-size: 30px
 }
 
-.item-wrap .txt_profile {
-    width: 260px;
+.wrap_subject .list_question li {
+    padding-top: 20px;
 }
 
-.item-wrap .txt_edu,
-.item-wrap .txt_lise,
-.item-wrap .txt_abil {
-    width: 400px;
+.wrap_subject .list_question li strong {
+    font-size: 15px;
 }
 
-.rota-i {
+.wrap_subject .desc_answer {
+    padding-top: 4px;
+    line-height: 30px;
     color: #494949;
-    font-size: 12px;
-    margin-right: 8px;
-    transform: rotate(-45deg);
+    font-size: 14px;
 }
 
-.jqbar.horizontal span {
-    display: inline-block;
-    margin-left: 5px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #494949;
+.wrap_subject .list_item {
+    float: left;
+    padding-bottom: 31px;
+    line-height: 30px
 }
 
-.jqbar.horizontal .bar-percent {
-    font-size: 11px;
+.wrap_subject .list_item dt {
     font-weight: bold;
-    height: 20px;
-    margin-bottom: 5px;
+    font-size: 18px;
+    color: #494949;
+}
+
+.wrap_subject .list_item dd {
+    padding-bottom: 30px;
+    font-size: 15px;
+    color: #626262;
+}
+
+.wrap_subject .list_graph {
+    width: 100%;
+}
+
+.wrap_subject .list_graph dl {
+    width: 100%;
+}
+
+.wrap_subject .list_graph dt {
+    clear: both;
+    float: left;
+    width: 20%;
+    padding-top: 17px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.wrap_subject .list_graph dd {
+    float: left;
+    width: 80%;
+    padding-top: 15px;
+}
+
+.wrap_subject .list_graph dd p {
+    float: left;
+    width: 70px;
+    font-weight: 500;
+    color: #737373;
+    line-height: 24px;
+}
+
+.wrap_subject .list_graph dd div {
+    height: 25px;
+    float: left;
+}
+
+div.graHtml {
+    background-color: #f16529;
+    width: 70%;
+}
+
+div.graJs {
+    background-color: #fcdb41;
+    width: 50%;
+}
+
+div.graPhoto {
+    background-color: #00b1d9;
+    width: 65%;
+}
+
+div.graIliu {
+    background-color: #ff7f18;
+    width: 60%;
+}
+
+div.graMove {
+    background-color: #ea77ff;
+    width: 50%;
+}
+
+@media all and (max-width:991px) {
+    .title_subject,
+    .profile_subject,
+    .cont_subject {
+        width: 100%;
+    }
+    .profile_subject,
+    .cont_subject {
+        margin-top: 30px;
+    }
+    .wrap_subject .emph_subject {
+        text-align: center;
+        font-size:25px;
+    }
+    .wrap_subject .list_question {
+        text-align: center;
+    }
 }
 
 @media all and (max-width:770px) {
-   .inner_banner {
+    .inner_banner {
         height: 300px;
     }
     .resume_inner p {
         font-size: 25px;
     }
+    .title_subject {
+        text-align: center;
+    }
+    .wrap_subject .cont_subject {
+        padding: 0 30px;
+    }
+    
+    .wrap_subject .emph_subject {
+        font-size:20px;
+    }
+    .wrap_subject .list_graph dt {
+        width: 100%;
+    }
+    .wrap_subject .list_graph dd {
+        width: 100%;
+    }
 }
 
 @media all and (max-width:480px) {
-   .inner_banner {
+    .inner_banner {
         height: 250px;
     }
     .resume_inner p {
@@ -279,27 +357,6 @@
     }
     .resume_inner p .mnodis {
         display: none;
-    }
-    .item-title {
-        margin: 20px 25px 0;
-    }
-    .item-wrap .txt_edu,
-    .item-wrap .txt_lise,
-    .item-wrap .txt_abil {
-        width: 290px;
-    }
-    .item-wrap .edit-qus p>span {
-        display: block;
-        font-size: 15px;
-        margin: 15px 0 5px;
-    }
-    .item-wrap .wrap-title {
-        font-size: 18px;
-        text-align: center;
-        display: block;
-    }
-    .item-wrap .img_profile p {
-        font-size: 15px;
     }
 }
 
@@ -312,13 +369,6 @@
 
 .folioWrap li {
     margin-bottom: 25px;
-}
-
-.item-folio {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 .item-border {
@@ -359,12 +409,12 @@
     background-image: url("../img/portfolio/cds_thumb.jpg");
 }
 
-.liContants {
+.liContents {
     width: 85%;
     margin: 36px auto 20px auto;
 }
 
-.liContants .liContitle {
+.liContents .liContitle {
     color: #595959;
     font-weight: 600;
     font-size: 15px;
@@ -376,7 +426,7 @@
     text-decoration: none;
 }
 
-.liContants p {
+.liContents p {
     font-size: 14px;
     font-weight: 400;
     color: #737373;
@@ -386,7 +436,7 @@
     letter-spacing: -1px;
 }
 
-.liContants hr {
+.liContents hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
@@ -394,7 +444,7 @@
     clear: both;
 }
 
-.liContants .edit_project {
+.liContents .edit_project {
     font-size: 11px;
     color: #696969;
 }
@@ -404,108 +454,100 @@
     font-size: 12px;
 }
 
+
 /* port index work step*/
 
 .step-wrap {
-    width:100%;
-    background-color:#f0f0f0;
+    width: 100%;
+    background-color: #f0f0f0;
 }
 
 .step-title {
-    font-size:24px;
+    font-size: 24px;
     text-align: center;
-    margin:10px 0;
-    color:#FF5200;
+    margin: 10px 0;
+    color: #FF5200;
 }
 
 .step-cont .step-ment {
-    font-size:14px;
+    font-size: 14px;
     text-align: center;
-    margin:0 0 15px;
+    margin: 0 0 15px;
 }
 
 .step-cont .stepLi {
-    display:inline-block;
-	padding:30px 0px;
-	width:100%;
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
 }
 
-.stepLi i{
-    font-size:60px;
-    width:100%;
+.stepLi i {
+    font-size: 60px;
+    width: 100%;
     text-align: center;
 }
 
 .stepLi span {
-    clear:both;
+    clear: both;
     display: block;
-	width:100%;
-	font-size:16px;
-	color:#494949;
-	padding-top:15px;
-	font-weight:700;
-	letter-spacing:0px;
+    width: 100%;
+    font-size: 16px;
+    color: #494949;
+    padding-top: 15px;
+    font-weight: 700;
+    letter-spacing: 0px;
     text-align: center;
 }
 
 .stepLi > li > p {
-    font-size:13px;
-    margin-top:15px;
-    color:#696969;
+    font-size: 13px;
+    margin-top: 15px;
+    color: #696969;
     letter-spacing: -2px;
-}
-
-@media all and (min-width:992px) {
-    .size_4 {
-        float: left;
-        width: 33.33333333%;
-    }
-    .size_3 {
-        float:left;
-        width:25%;
-    }
 }
 
 @media all and (max-width:320px) {
     .liContitle .ENGname {
         display: block;
-        font-size:13px;
+        font-size: 13px;
     }
 }
+
 
 /* PORTFOLIO SUPERGA CSS */
 
 .suprega .ENGname {
-    font-size:17px;
-    color:#001442;
+    font-size: 17px;
+    color: #001442;
 }
 
 .explain-area {
-    padding-left:15px;
+    padding-left: 15px;
     padding-right: 15px;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .area-title {
-    margin:10px 0;
-    font-size:18px;
+    margin: 10px 0;
+    font-size: 18px;
     display: inline-block;
     font-weight: 600;
-    color:#494949;
+    color: #494949;
 }
 
 .area-title i {
-   padding-right:8px;  
+    padding-right: 8px;
 }
 
 .area-text {
-    padding:10px 0;
+    padding: 10px 0;
 }
 
 .area-text p {
-    padding-top:12px;
-    font-size:14px;
-    color:#393939;
+    padding-top: 12px;
+    font-size: 14px;
+    color: #393939;
 }
 
 .area-text p > .txt-title {
@@ -513,63 +555,63 @@
 }
 
 .visual-area {
-    width:100%;
-    background-color:#ffdd6a;
+    width: 100%;
+    background-color: #ffdd6a;
     position: relative;
 }
 
 .visual-area .visualIMGTitle {
-	position:absolute;
-	z-index:10;
-	left:0;
-	height:100%;
-	width:100%;
-	max-width:1170px;
-    margin-left:300px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin-left: 300px;
 }
 
-.visual-area .visualIMGTitle > h3{
- 	position:absolute;
-	bottom:25px;
-	color:#fff;
-	font-weight:400;
-	font-size:35px;
-	z-index:20;
-	text-shadow: 0px 0px 5px #333;   
+.visual-area .visualIMGTitle > h3 {
+    position: absolute;
+    bottom: 25px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 35px;
+    z-index: 20;
+    text-shadow: 0px 0px 5px #333;
 }
 
 .visual-div {
-    position:relative;
-	height:400px;
-	display:inline-block;
-	background:url("../img/portfolio/superga/superga_visual1.jpg") no-repeat;
-	background-size:cover;
-	background-position:center center;
+    position: relative;
+    height: 400px;
+    display: inline-block;
+    background: url("../img/portfolio/superga/superga_visual1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-@media all and (min-width:770px){
-.visual-wid {
-    width:66.66666667%;
-    float: left;
+@media all and (min-width:770px) {
+    .visual-wid {
+        width: 66.66666667%;
+        float: left;
     }
 }
 
-
 .area-colorChip {
-    width:100%;
-    padding-top:20px;
+    width: 100%;
+    padding-top: 20px;
 }
 
 .area-colorChip dl {
-    width:100%;
+    width: 100%;
 }
+
 .area-colorChip dt {
     clear: both;
     float: left;
     width: 70px;
     padding-top: 17px;
-    font-size:13px;
-    color:#494949;
+    font-size: 13px;
+    color: #494949;
     font-weight: 600;
 }
 
@@ -584,7 +626,7 @@
     width: 70px;
     font-weight: 500;
     color: #ffdd6a;
-    padding:0 0 0 25px;
+    padding: 0 0 0 25px;
 }
 
 .area-colorChip div {
@@ -594,50 +636,49 @@
 }
 
 div.main-sup {
-    background-color:#333;
+    background-color: #333;
 }
 
 div.impact-sup {
-    background-color:#000e46;
+    background-color: #000e46;
 }
 
 div.sub-sup {
-    background-color:#777;
+    background-color: #777;
 }
 
 .contWrap h4 {
-    font-size:16px;
-    padding:25px 0;
+    font-size: 16px;
+    padding: 25px 0;
     display: inline-block;
-    color:#696969;
+    color: #696969;
 }
-
 
 .conItem {
-    padding:25px 0;
+    padding: 25px 0;
 }
 
-.conItem img{
-    max-width:300px;
-    margin:0 auto;
+.conItem img {
+    max-width: 300px;
+    margin: 0 auto;
     padding-bottom: 8px;
-    border-bottom:5px solid #ffdd6a;
+    border-bottom: 5px solid #ffdd6a;
 }
 
 .conItem p {
     display: block;
-    font-size:13px;
+    font-size: 13px;
     text-align: center;
-    padding:10px 0;
+    padding: 10px 0;
 }
 
 .conItem .mockupLi,
 .conItem .mockupName {
-    padding:0;
-    width:100%;
+    padding: 0;
+    width: 100%;
 }
 
-.mockupLi li{
+.mockupLi li {
     float: left;
     width: calc(16% - 10px);
     margin-right: 20px;
@@ -646,22 +687,21 @@ div.sub-sup {
 
 .mockupLi li:last-child,
 .mockupName li:last-child {
-    margin-right:0;
+    margin-right: 0;
 }
 
 .mockupLi li img {
-    width:100%;
-    height:auto;
-    max-width:200px;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
     border-radius: 0;
 }
 
-.mockupName li{
+.mockupName li {
     float: left;
     width: calc(33% - 11px);
     margin-right: 20px;
     text-align: center;
-    font-size:13px;
-    padding:10px 0;
+    font-size: 13px;
+    padding: 10px 0;
 }
-
