@@ -185,6 +185,67 @@ var {
 
 /* 부트스트랩 CSS 인용 */
 
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.item-row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container:before,
+.container:after,
+.item-row:before,
+.item-row:after {
+    display: table;
+    content: " ";
+}
+
+.container:after,
+.item-row:after {
+    clear: both;
+}
+
+.item-wrap {
+    padding: 20px 0;
+}
+
+.item-wrap:after,
+.item-wrap:before {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+@media all and (max-width:420px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media all and (min-width: 770px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 .size_2,
 .size_3,
 .size_4,
