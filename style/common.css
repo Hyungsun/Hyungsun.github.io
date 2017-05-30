@@ -98,7 +98,7 @@ textarea,
 button {
     font-size: 12px;
     line-height: 1.42857143;
-    font-family: '맑은 고딕', 'Malgun Gothic', '나눔 고딕', 'Nanum Gothic', '돋움', dotum, sans-serif;
+    font-family:'맑은 고딕', 'Malgun Gothic', '나눔 고딕', 'Nanum Gothic', '돋움', dotum, "Noto Sans KR" , sans-serif;
     color: #333;
 }
 

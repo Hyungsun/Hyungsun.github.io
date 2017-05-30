@@ -5,67 +5,7 @@
 }
 
 
-/* 공통 CRUMBS 및 CONTAINER CSS  */
-
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.item-row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.container:before,
-.container:after,
-.item-row:before,
-.item-row:after {
-    display: table;
-    content: " ";
-}
-
-.container:after,
-.item-row:after {
-    clear: both;
-}
-
-.item-wrap {
-    padding: 20px 0;
-}
-
-.item-wrap:after,
-.item-wrap:before {
-    display: table;
-    content: '';
-    clear: both;
-}
-
-@media all and (max-width:420px) {
-    .hidden-xs {
-        display: none !important;
-    }
-}
-
-@media all and (min-width: 770px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media all and (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media all and (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
+/* 공통 CRUMBS CSS  */
 
 .crumbs-title {
     background: url(../img/skin/crumb_line.jpg) left 49% repeat-x;
@@ -204,7 +144,8 @@
 
 .wrap_subject .emph_subject {
     font-weight: 500;
-    font-size: 30px
+    font-size: 30px;
+        color:#30A9DE;
 }
 
 .wrap_subject .list_question li {
@@ -552,7 +493,7 @@ div.graMove {
 }
 
 .brand_explan .dec_brand > p {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: -1px;
     line-height: 26px;
     color:#595959;
@@ -614,21 +555,73 @@ div.graMove {
     letter-spacing: -1px;
 }
 
-.step_list .tit_step span {
+.tit_step span {
     font-weight:600; 
     color:#ffdd6a;
+}
+
+.step_list .intro_step {
+    line-height: 26px;
+    letter-spacing: -1px;
+    font-size:15px;
+    padding-top:22px;
+}
+
+.intro_step .dec_brand{
+    font-size:15px;
+    font-weight: 600;
 }
 
 .step_list .dec_step {
     padding:10px 0;
 }
 
-.step_list .dec_step p{
+.dec_step p{
     padding-top: 12px;
     font-size: 14px;
     color: #393939
 }
 
-.step_list .dec_step p span{
+.dec_step .sub_step{
     font-weight: 600;
+}
+
+
+.dec_step .dec_imgbrand h3,
+.dec_step .dec_imgWrap h3{
+    padding:25px 0 35px;
+    font-size:16px;
+    font-weight: 600;
+}
+
+
+.dec_step .dec_imgbrand ul,
+.dec_step .dec_imgWrap ul{
+    margin-left:0;
+    margin-right:0;
+}
+
+.dec_imgbrand .liBrand img {
+    display: block;
+    max-width:110px;
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    padding-bottom:8px;
+    border-bottom: 5px solid #ffdd6a;
+}
+
+.dec_imgbrand .liBrand span,
+.dec_imgWrap .liSketch span{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.dec_imgWrap .liSketch img{
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #ffdd6a;
 }
