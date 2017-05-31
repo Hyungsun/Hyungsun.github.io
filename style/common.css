@@ -316,9 +316,6 @@ var {
     .size_6 {
         width: 50%;
     }
-    .size_4 {
-        width: 33.33333333%;
-    }
     .size_3 {
         width: 25%;
     }
@@ -326,6 +323,7 @@ var {
         width: 16.66666667%;
     }
 }
+
 
 /* layout */
 

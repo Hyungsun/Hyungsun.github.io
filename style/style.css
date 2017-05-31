@@ -588,17 +588,27 @@ div.graMove {
 
 
 .dec_step .dec_imgbrand h3,
-.dec_step .dec_imgWrap h3{
+.dec_step .dec_liWrap h4{
     padding:25px 0 35px;
     font-size:16px;
     font-weight: 600;
 }
 
+.dec_step .dec_liWrap {
+    padding:25px 0 30px;    
+}
 
-.dec_step .dec_imgbrand ul,
-.dec_step .dec_imgWrap ul{
+.dec_step .dec_liWrap h4 {
+    text-align: center;
+}
+
+.dec_step .dec_imgbrand ul{
     margin-left:0;
     margin-right:0;
+}
+
+.dec_step .dec_liWrap ul {
+    margin-bottom:30px; 
 }
 
 .dec_imgbrand .liBrand img {
@@ -611,17 +621,45 @@ div.graMove {
     border-bottom: 5px solid #ffdd6a;
 }
 
-.dec_imgbrand .liBrand span,
-.dec_imgWrap .liSketch span{
+.dec_imgbrand .liBrand span{
     display: block;
     font-size: 15px;
     text-align: center;
     padding-top: 10px;
 }
 
-.dec_imgWrap .liSketch img{
-    max-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 8px;
-    border-bottom: 5px solid #ffdd6a;
+.dec_liWrap .liInfo .introduceWrap {
+    background-color:#6AAFE6;
+    height: 555px;
+    color:#fff;
+}
+
+.liInfo .introduceWrap span {
+    display: block;
+    text-align: center;
+    font-size:40px;
+    padding:30px 0 20px;
+    margin:0 auto;
+    width:25%;
+    border-bottom: 1px solid #fff;
+}
+
+.liInfo .introduceWrap h3 {
+    text-align: center;
+    font-size:25px;
+    padding:25px 0;
+}
+
+.liInfo .introduceWrap p {
+    padding:0 15px;
+    font-size:14px;
+    line-height: 24px;
+    color:#fff;
+}
+
+
+@media all and (min-width:992px) {
+    .custom-fr li{
+        float: right;
+    }
 }
