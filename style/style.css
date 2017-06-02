@@ -629,12 +629,20 @@ div.graMove {
 }
 
 .dec_liWrap .liInfo .introduceWrap {
-    background-color:#6AAFE6;
+    background-color:#60c5ba;
     height: 555px;
     color:#fff;
+    position: absolute;
 }
 
-.liInfo .introduceWrap span {
+.dec_liWrap .liInfo .introduceWrap .introduceArea {
+    position: relative;
+    top: 50%;
+    left:0;
+    margin-top:-162px;
+}
+
+.liInfo .introduceWrap .introduceArea span {
     display: block;
     text-align: center;
     font-size:40px;
@@ -644,14 +652,15 @@ div.graMove {
     border-bottom: 1px solid #fff;
 }
 
-.liInfo .introduceWrap h3 {
+.liInfo .introduceWrap .introduceArea h3 {
     text-align: center;
     font-size:25px;
     padding:25px 0;
 }
 
-.liInfo .introduceWrap p {
-    padding:0 15px;
+.liInfo .introduceWrap .introduceArea p {
+    margin:20px 0;
+    padding:0 24px;
     font-size:14px;
     line-height: 24px;
     color:#fff;

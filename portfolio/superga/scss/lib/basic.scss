@@ -1,0 +1,22 @@
+// basic.scss
+
+$main     :       #000e46;
+$sub1     :       #ce1722;
+$sub2     :       #1b295b;
+$sub3     :       #c90d0d;
+$sub4     :        #999;
+$black    :       #000;
+$white    :       #fff;
+$point1  :      #f24f3e;
+$point2   :       #803310;
+$line         :      1px solid $black;
+$line2      :       1px solid #ccc;
+$img         :        "../img/";
+$p : center center;
+$o: 1;
+
+@mixin box($w:100%, $h:100%, $i:$img, $f:"nav/t_logo", $t:".png",$p:$p,$o:$o){
+    width: $w; height: $h; display: block; 
+    background-repeat: no-repeat; background-position: $p;
+    background-image: url($i+$f+$t);
+    }// @mixin box=> @include box;

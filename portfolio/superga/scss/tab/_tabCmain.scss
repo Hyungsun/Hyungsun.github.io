@@ -1,0 +1,120 @@
+#sContainer{width: calc(93.6% - 20px); height: 265vw;/*1450px*/ 
+                        padding: 0 2vw; margin: 0 auto; position: relative;
+        #banner { width: 100%; height: 38vw; margin-top: 1vw; overflow: hidden; 
+                            box-sizing: border-box; position: relative; top: 1vw;}
+        #banner > .btn { position: absolute; width: 30px; height: 100%; 
+                                        background-color: transparent; top: 0; z-index: 400; transition: all 0.5s; }
+        #banner > .btn.left_btn { left: 0; }
+        #banner > .btn.right_btn { right: 0; }
+        #banner > .btn:hover { background-color: rgba(255, 255, 255, 0.2); }
+        #banner > .btn button { width: 100%; height: 100%; background-color: transparent; }
+/*        #banner > .btn:hover i { transform: scale(2); }*/
+        #banner > .btn i { font-size: 1.5em; color: $sub4; }
+        #banner > .btn span { width: 0; height: 0; display: block; overflow: hidden; }
+        #banner > .banner_box { width: 300%; height: 100%; margin-left: -100%; }
+        #banner > .banner_box > li { float: left; line-height: 500px; 
+                                text-align: center; color: #fff; font-size: 2rem; font-weight: bold; }
+        #banner > .banner_box > .banner_01 { @include box($w:calc(100% / 3), $h:100%,$f:"banner/banner_1",$p:top left); background-size:100%;
+            >span{display: none;}
+            }
+        #banner > .banner_box > .banner_02 { @include box($w:calc(100% / 3), $h:100%,$f:"banner/banner_2",$p:top left);  background-size:100%;
+        >span{display: none;}
+        }
+        #banner > .banner_box > .banner_03 {@include box($w:calc(100% / 3), $h:100%,$f:"banner/banner_3",$p:top left);  background-size:100%;
+        >span{display: none;}
+        }
+        #banner > .banner_box > .banner_04 { @include box($w:calc(100% / 3), $h:100%,$f:"banner/banner_4",$p:top left); background-size:100%;
+        >span{display: none;}
+        }
+    // #banner
+    
+        #lnb { width: 100%; height: 18.5vw; margin-top: 6vw; overflow: hidden;  box-sizing: border-box; position: relative; top: 1vw; }
+        #lnb > .btn { position: absolute; width: 30px; height: 100%; background-color: transparent; top: 0; z-index: 400; transition: all 0.5s; }
+        #lnb > .btn.left_btn2 { left: 0; }
+        #lnb > .btn.right_btn2 { right: 0; }
+        #lnb > .btn:hover { background-color: rgba(255, 255, 255, 0.2); }
+        #lnb > .btn button { width: 100%; height: 100%; background-color: transparent; }
+        #lnb > .btn:hover i { transform: scale(1); }
+        #lnb > .btn i { font-size: 1.5em; color: $sub4; }
+        #lnb > .btn span { width: 0; height: 0; display: block; overflow: hidden; }
+        #lnb > .lnb_box { width: 300%; height: 100%; margin-left: -100%; }
+        #lnb > .lnb_box > li { float: left; line-height: 500px; text-align: center; color: #fff; font-size: 2rem; font-weight: bold; }
+        #lnb > .lnb_box > .lnb_01 {width: calc(100% / 3); height: 100%; /*background-size:contain;*/
+            >ol{width: 100%; height: 100%; 
+                >li{width: calc(100% / 4); height: 100px; float: left;
+                    &:nth-child(1){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_01",$p:top center); background-size:contain;}
+                    &:nth-child(2){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_02",$p:top center); background-size:contain;}
+                    &:nth-child(3){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_03",$p:top center); background-size:contain;}
+                    &:nth-child(4){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_04",$p:top center); background-size:contain;}
+                    >a{width: 18vw; height: 20vw; display: block; margin-left: 2vw;}
+                }
+            }
+        }
+        #lnb > .lnb_box > .lnb_02 {width: calc(100% / 3);  height: 100%;    /*background-size:contain;*/
+             >ol{width: 100%; height: 100%; 
+                >li{width: calc(100% / 4); height: 100px;  float: left;
+                    &:nth-child(1){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_01",$p:top center); background-size:contain;}
+                    &:nth-child(2){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_02",$p:top center); background-size:contain;}
+                    &:nth-child(3){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_03",$p:top center); background-size:contain;}
+                    &:nth-child(4){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_04",$p:top center); background-size:contain;}
+                    >a{width: 18vw; height: 20vw; display: block; margin-left: 2vw;}
+                 }
+            }
+        }
+        #lnb > .lnb_box > .lnb_03 {width: calc(100% / 3);  height: 100%;  /*background-size:contain;*/
+            >ol{width: 100%; height: 100%; 
+                >li{width: calc(100% / 4); height: 100px;  float: left;
+                     &:nth-child(1){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_01",$p:top center); background-size:contain;}
+                    &:nth-child(2){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_02",$p:top center); background-size:contain;}
+                    &:nth-child(3){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_03",$p:top center); background-size:contain;}
+                    &:nth-child(4){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_04",$p:top center); background-size:contain;}
+                    >a{width: 18vw; height: 20vw; display: block; margin-left: 2vw;}                
+                }
+            }
+        }
+        #lnb > .lnb_box > .lnb_04 {width: calc(100% / 3); height: 100%;   /*background-size:contain;*/
+            >ol{width: 100%; height: 100%; 
+                >li{width: calc(100% / 4); height: 100px; float: left;
+                     &:nth-child(1){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_01",$p:top center); background-size:contain;}
+                    &:nth-child(2){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_02",$p:top center); background-size:contain;}
+                    &:nth-child(3){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_03",$p:top center); background-size:contain;}
+                    &:nth-child(4){@include box($w:calc(100% / 4) , $h:100%,$f:"article/gnb_04",$p:top center); background-size:contain;}
+                    >a{width: 18vw; height: 20vw; display: block; margin-left: 2vw;}                
+                }
+            }
+        }
+    // lnb
+    #contect_01{width: 90vw; height: 27.81vw;   margin: 0 auto; margin-top: 6vw;
+            >ul{width: 100%; height: 100%;
+                >li{ float: left; }
+            }
+    .esome{width: 41.66vw; height: 27.81vw;  margin-left: 1.5vw;}
+    .esome>a{@include box($w:100%, $h:100%,$f:"article/esome1"); border-radius: 1vw;  transition: all 0.5s ease; background-size: 100%}
+    .esome>a:hover{border-radius: 1vw; opacity: 0.9;  transform:translate(2px); transition: all 0.5s ease;}
+    .classic{width: 41.66vw; height: 27.81vw; margin-left: 4vw;}
+    .classic>a{@include box($w:100%, $h:100%,$f:"article/Classic2"); border-radius: 1vw;  transition: all 0.5s ease; background-size: 100%;}
+    .classic>a:hover{border-radius: 1vw;  opacity: 0.9;transform:translate(-2px); transition: all 0.5s ease;}
+        }// #contect_01
+    
+    #contect_02{width: 87.4vw; height: 45.95vw;margin-top:4vw; margin-left: 1.5vw;}
+    #contect_02>a{@include box($w:100%, $h:100%,$f:"article/esome3"); border-radius: 1vw;  transition: all 0.5s ease; background-size: 100%; }
+    #contect_02>a:hover{opacity: 0.9; transform:translateY(2px); transition: all 0.5s ease;}
+        // #contect_02
+    #esomeGallery{width:100%; height: 83.33vw; margin-top: 8vw; border-top: 1px solid #ccc;
+        >h2{width: 100%; height: 5vw; font-size: 2.2vw;  font-family: 'Malgun Gothic'; color:#555; text-align: center; margin-top: 1vw;}
+        >ul{width: 100%; height: 100%; border:5px solid #fff; 
+            >li{width: calc(100% / 3); height: 30%; border:5px solid #fff; float: left; box-sizing: border-box; transition: all 0.5s;
+            &:nth-child(1){@include box($w:calc(100% / 3),$h:50%,$f:"article/1",$t:".jpg",$p:top center); background-size:100%;}
+            &:nth-child(2){@include box($w:calc(100% / 3),$h:50%,$f:"article/2",$t:".jpg",$p:top center); background-size:100%;}
+            &:nth-child(3){@include box($w:calc(100% / 3),$h:50%,$f:"article/3",$t:".jpg",$p:top center); background-size:100%;}
+            &:nth-child(4){@include box($w:calc(100% / 3),$h:50%,$f:"article/4",$t:".jpg",$p:top center); background-size:100%;}
+            &:nth-child(5){@include box($w:calc(100% / 3),$h:50%,$f:"article/5",$t:".jpg",$p:top center); background-size:100%;}
+            &:nth-child(6){@include box($w:calc(100% / 3),$h:50%,$f:"article/6",$t:".jpg",$p:top center); background-size:100%;}
+                &:hover{opacity: 0.8; transition: all 0.5s;}
+                >a{width: 100%; height: 100%; display: block;
+                >span{display: none;}
+                }
+            }
+        }
+    }// #esomeGallery
+}// article

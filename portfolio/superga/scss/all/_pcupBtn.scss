@@ -1,0 +1,23 @@
+
+.scroll-up-button {
+  display: none;
+  position: fixed;
+  bottom: 10vw;
+  right: 3.5vw;
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 10%;
+  background-color: #fff;
+  cursor: pointer;
+    border: 1px solid #999;
+    box-sizing: border-box;
+  z-index: 500;
+  font-size: 2vw;
+  font-weight: bold;
+  
+  text-align: center;
+  text-decoration: none;
+    >i{ line-height: 3.5vw; text-align: center;}
+  
+  color: $black;
+}

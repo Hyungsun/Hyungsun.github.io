@@ -1,0 +1,30 @@
+#wrap{width: 960px; height: auto; margin: 0 auto;}
+        #sHeader{width:100%;/*960px*/ height: 15.625vw;  /*padding: 0 2vw; */
+                        position: relative; /*border-bottom: 5px solid $sub1; */margin: 0 auto;
+        h1{width:20vw;  height: 20vw;
+              position: absolute; z-index: 100; top: 1vw; left: 40vw; 
+            >a{@include box($f:"nav/top_logo",$t:".jpg"); position: absolute; background-size: 100%;}
+        }// h1
+.page-menu-bar {background: #fff;display: block;width: 15vw;position: fixed;z-index: 500; top:2vw; right:2.2vw;}
+/*@media only screen and (max-width: 640px) {.page-menu-bar .page-menu {display: none;}}*/
+@media only screen and (max-width: 640px) {.page-menu-bar {background: none;}}
+.page-menu-bar li {display: inline-block;margin: 20px 40px 16px 40px;}
+.page-menu-bar li a {color: #444;text-decoration: none;font-family: Arial, sans-serif;font-weight: 300;font-size: 20px;}
+.page-menu-bar li a:hover {color: #aaa;}
+.page-menu-bar li .selected {font-weight: 400;color: purple;}
+.res-menu-button {text-align: right;color: #444;cursor: pointer;padding-right: 20px;font-size: 11.66vw;display: none;}
+.res-menu-button:hover {color:#aaa;}
+@media only screen and (max-width: 640px) {.res-menu-button {display: block;}}
+.res-menu {display: none;}
+.res-menu li {display: block;padding: 0;margin: 0;}
+.res-menu li a { font-size: 2.7vw; display: block;padding: 10px;background: #222;border-bottom: 1px solid #333;color: white; 
+                            font-family: "arial"; text-align: center;}
+ .menu-container { position: fixed; z-index: 500;width: 70px; height: 70px; background: #4b505c; float: left; position: relative; }
+.menu-container:hover { background: #444955; cursor: pointer; }
+
+#bar1 { width: 19px; height: 2px; background: #bbb; position: absolute; top: 22px; left: 24px;-webkit-transform: rotate(00deg); -webkit-transform-origin: 9.5px 0px;-moz-transform: rotate(0deg);-moz-transform-origin: 9.5px 0px; -ms-transform: rotate(0deg);-ms-transform-origin: 9.5px 0px;transform: rotate(0deg);transform-origin: 9.5px 0px; }
+
+#bar2 { width: 19px; height: 2px; background: #bbb;position: absolute; top: 32px; left: 24px; -webkit-transform: rotate(0deg); -webkit-transform-origin: 9.5px 0px;-moz-transform: rotate(0deg);-moz-transform-origin: 9.5px 0px; -ms-transform: rotate(0deg);-ms-transform-origin: 9.5px 0px;transform: rotate(0deg);transform-origin: 9.5px 0px; }
+        
+#bar3 { width: 19px; height: 2px; background: #bbb; position: absolute; top: 42px; left: 24px; -webkit-transform: rotate(0deg); -webkit-transform-origin: 9.5px 0px;-moz-transform: rotate(0deg);-moz-transform-origin: 9.5px 0px; -ms-transform: rotate(0deg);-ms-transform-origin: 9.5px 0px;transform: rotate(0deg);transform-origin: 9.5px 0px;}
+    }// #sHeader

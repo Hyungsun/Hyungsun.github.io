@@ -1,0 +1,30 @@
+ #sFooter{width:100%; height: 22.6vw; background-color: #f8f8f8;
+                     /*padding: 0 2vw;*/ margin: 0 auto; position: relative;
+        >#bBar{width: 100%; height: 6.95vw; 
+                       background-image: linear-gradient(90deg, #fff 50%, #727375 50%);  
+                       position: absolute; top: -7.2vw; left: -0.1vw; z-index: 500; 
+                        border-top:  1px solid #ccc ;
+            >ul{width: 100%; height: 100%;
+                >li{width: calc(100% / 3); height: 100%; float: left;
+                    &:nth-child(1){width: 15%;background-color:#fff}
+                    &:nth-child(2){@include box($w:65%,$f:"footer/bBar",$p:top center); background-size:contain;}
+                    &:nth-child(3){width: 20%;background-color:#727375}  
+                    >span{display: none;}
+                }
+            }
+        }// #bBra
+        .mobText{width: 60vw; height: 4vw; margin: 0 auto; padding-top: 3vw;
+            >h2{width: 100%; height: 100%; font-size: 2.2vw; font-family: "arial"; text-align: center;}
+            } 
+        .snsBox{width: 50vw; height: 10vw;  float: left;  margin-top: 4vw; margin-left: 28.8vw;
+            >ul{width: 100%; height: 100%;
+                >li{width: calc(100% / 3);height: 40px; float: left;
+                    >a{width: 100%; height: 100%;;
+                        >i{font-size: 7.2vw; text-align: center;
+                            &:hover{color:$sub4;}
+                        }
+                    }
+                }
+            }
+        }        
+    }// #sFooter
