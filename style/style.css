@@ -563,6 +563,10 @@ div.graMove {
 
 /* Project Step CSS */
 
+.fc_black {
+    color:#7d6461 !important
+}
+
 .project_section >div {
     position: relative;
 }
@@ -588,10 +592,17 @@ div.graMove {
     background-color: #30A9DE;
 }
 
+.project_section .section_3.kerasys {
+    background-color: #e68096;
+}
+
 .project_section .section_5.pageColor_1 {
     background-color: #F16B6F;
 }
 
+.project_section .section_5.pageColor_2 {
+    background-color: #FADAD8;
+}
 
 .project_section .section_summ h4 {
     color: #fff;
@@ -600,7 +611,7 @@ div.graMove {
 }
 
 .project_section .section_summ p {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .project_section .section_summ p span {
@@ -673,6 +684,8 @@ div.graMove {
     margin-left: -590px;
 }
 
+
+.project_section .section_3 img,
 .project_section .section_4 img {
     display: block;
     margin: 0 auto;
@@ -684,6 +697,7 @@ div.graMove {
 }
 
 @media all and (max-width:1199px) {
+    .project_section .section_3 img,
     .project_section .section_4 img,
     .project_section .section_5 img {
         width: 100%;
