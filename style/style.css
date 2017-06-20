@@ -747,6 +747,11 @@ div.graMove {
         margin-bottom:20px;
     }
     
+    .project_section .section_summ p span,
+    .project_section .section_2 .feature .summ span {
+        text-align: left;
+    }
+    
     .project_section .section_4 {
         padding-bottom:60px;
     }
@@ -837,6 +842,7 @@ div.graMove {
     left: 50%;
     top: 30px;
     display: block;
+    margin-left: -5px;
     width: 26px;
     height: 26px;
     background: url(../img/skin/list_icon.png) 50% 50% no-repeat;
