@@ -784,10 +784,7 @@ div.graMove {
     .project_section .section_2 .feature .summ span {
         text-align: left;
     }
-    
-    .project_section .section_4 {
-        padding-bottom:60px;
-    }
+
 }
 
 @media all and (max-width:399px) {
