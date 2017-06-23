@@ -94,3 +94,25 @@ function headStyle() {
         }
     }); 
 }
+
+function modalOn() {
+    var modalBtn = $(".link_btn"),
+        modalWrap = $(".modalWrap"),
+        modalAlert = modalWrap.find('.alert-box'),
+        closeBtn = modalWrap.find('.close');
+    
+    modalBtn.on('click',function(){
+        modalWrap.css('display','block');
+        modalAlert.removeClass('modal-animated-out').addClass('modal-animated-in');
+    })
+      $(document).on('click', function(e) {
+    var target = $(e.target);
+    if(target.is(modalWrap) || target.is(closeBtn)) {
+      modalAlert.removeClass('modal-animated-in').addClass('modal-animated-out').delay(400).queue(function(next) {
+        modalWrap.css('display', 'none');
+        next();
+      });
+    }
+  });
+}
+
