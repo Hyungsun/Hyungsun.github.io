@@ -765,12 +765,29 @@ div.graMove {
         margin-top: 80px;
     }
     
+    .project_section .section_2 .feature_wrap .feature_sec h5,
+    .project_section .section_2 .feature_wrap .feature_sec p {
+        text-align: center;
+    }
+    
+    .project_section .section_2 .feature_wrap .feature_sec .bar_sec{
+        display: block;
+        margin:10px auto;
+    }
+    
     .project_section .section_2 .featureBg {
         position: static;
         margin: 0 auto;
     }
     .project_section .section_2 .featureBg img {
         width: 100%;
+    }
+    
+}
+
+@media all and (max-width:770px) {
+    #bg_qinin {
+    background-image: linear-gradient(180deg, #0076a3 80%, #fff 20%);
     }
 }
 
@@ -795,7 +812,6 @@ div.graMove {
     .project_section .section_2 .feature_wrap .feature_sec {
         padding: 0;
     }   
-
 }
 
 @media all and (max-width:399px) {
