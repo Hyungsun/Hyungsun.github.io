@@ -219,7 +219,7 @@
 }
 
 div.graHtml {
-    background-color: #f16529;
+    background-image: linear-gradient(120deg, #e44d26 50%, #0070b9 50%);
     width: 70%;
 }
 
@@ -572,7 +572,7 @@ div.graMove {
 }
 
 .sec_padding {
-    padding-top: 60px;
+    padding-top: 90px;
 }
 
 .project_section >div {
@@ -595,7 +595,8 @@ div.graMove {
 }
 
 #bg_kerasys {
-    background-color: #e68096;
+    background-image: linear-gradient(190deg, #e68096 70%, #f997ac 50%);
+
 }
 
 #bg_qinin {
@@ -603,7 +604,7 @@ div.graMove {
 }
 
 .pointBg_sup {
-    background-color: #F16B6F;
+    background-image: linear-gradient(175deg, #F16B6F 75%, #f1595e 25%);
 }
 
 .pointBg_kera {
@@ -615,7 +616,7 @@ div.graMove {
 }
 
 .pointBg_qin2{
-    background-image: linear-gradient(168deg, #8EC0E4 60%, #6AAFE6 40%);
+    background-image: linear-gradient(168deg, #8EC0E4 60.1%, #6AAFE6 39.9%);
 }
 
 .project_section .section_summ h4 {
@@ -658,36 +659,45 @@ div.graMove {
 }
 
 .project_section .section_2 .feature h4 {
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
-.project_section .section_2 .feature span {
+.project_section .section_2 .feature h4 span {
     display: block;
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-.project_section .section_2 .feature .summ span {
-    margin: 0 auto;
-    width: 960px;
-    font-size: 16px;
-    padding: 0 15px;
-    letter-spacing: -1px;
-}
-
-.project_section .section_2 .feature .feature_icon {
-    margin-top: 80px;
-}
-
-.project_section .section_2 .feature .feature_icon img {
+.project_section .section_2 .feature_wrap .feature_sec img {
     display: block;
     margin: 0 auto;
+    padding:15px 0;
 }
 
-.project_section .section_2 .feature .feature_icon p {
+
+.project_section .section_2 .feature_wrap .feature_sec {
+    padding: 0 20px;
+}
+
+.project_section .section_2 .feature_wrap .feature_sec .bar_sec{
+    display: inline-block;
+    width:50px;
+    height:2px;
+    background-color:#fff;
+    margin:10px 0;
+}
+
+.project_section .section_2 .feature_wrap .feature_sec h5 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 0; 
+    color:#fff;
+}
+
+.project_section .section_2 .feature_wrap .feature_sec p {
     color: #fff;
-    text-align: center;
+    height:150px;
     font-size: 15px;
     margin-top: 20px;
 }
@@ -750,12 +760,11 @@ div.graMove {
         margin: 0;
         width: 100%;
     }
-    .project_section .section_2 .feature .summ span {
-        width: 100%;
+    
+    .project_section .section_2 .feature .feature_wrap{
+        margin-top: 80px;
     }
-    .project_section .section_2 .feature .feature_icon li {
-        margin-bottom: 50px;
-    }
+    
     .project_section .section_2 .featureBg {
         position: static;
         margin: 0 auto;
@@ -766,8 +775,7 @@ div.graMove {
 }
 
 @media all and (max-width:480px) {
-    .project_section .section_summ h4,
-    .project_section .section_2 .feature span {
+    .project_section .section_summ h4{
         font-size: 30px;
     }
     .project_section .section_summ h4 br,
@@ -780,10 +788,13 @@ div.graMove {
         margin-bottom:20px;
     }
     
-    .project_section .section_summ p span,
-    .project_section .section_2 .feature .summ span {
+    .project_section .section_summ p span{
         text-align: left;
     }
+    
+    .project_section .section_2 .feature_wrap .feature_sec {
+        padding: 0;
+    }   
 
 }
 
