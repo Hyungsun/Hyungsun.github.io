@@ -611,6 +611,10 @@ div.graMove {
     background-image: linear-gradient(185deg, #2f89bf 75%, #2176a9 25%);
 }
 
+#bg_cds {
+    background-image: linear-gradient(170deg, #393331 55%, #eb6419 45%);
+}
+
 .pointBg_sup {
     background-image: linear-gradient(175deg, #F16B6F 75%, #f1595e 25%);
 }
@@ -633,6 +637,10 @@ div.graMove {
 
 .pointBg_hntc2 {
     background-image: linear-gradient(185deg, #fff 55%, #2d82b5 45%);
+}
+
+.pointBg_cds {
+    background-image: linear-gradient(160deg, #eb6419 60%, #fff 40%);
 }
 
 
