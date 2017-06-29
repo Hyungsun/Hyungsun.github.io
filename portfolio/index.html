@@ -128,8 +128,11 @@
                                 <ul class="item-row folioWrap">
                                     <li class="size_4 item-folio">
                                         <div class="item-border">
-                                            <a href="pCds.html">
+                                            <a href="pCds.html" class="positionA">
                                                 <div class="liThumb" id="cds"></div>
+                                                <div class="hoverThumb"><span>
+                                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                                </span></div>
                                             </a>
                                             <div class="liContents">
                                                 <h3 class="liContitle">
@@ -147,8 +150,11 @@
                                     <!--// CDS -->
                                     <li class="size_4 item-folio">
                                         <div class="item-border">
-                                            <a href="pHntc.html">
+                                            <a href="pHntc.html" class="positionA">
                                                 <div class="liThumb" id="hntc"></div>
+                                                <div class="hoverThumb"><span>
+                                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                                </span></div>
                                             </a>
                                             <div class="liContents">
                                                 <h3 class="liContitle">
@@ -166,8 +172,11 @@
                                     <!--// HNTC -->
                                     <li class="size_4 item-folio">
                                         <div class="item-border">
-                                            <a href="pQinin.html">
+                                            <a href="pQinin.html" class="positionA">
                                                 <div class="liThumb" id="qinin"></div>
+                                                <div class="hoverThumb"><span>
+                                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                                </span></div>
                                             </a>
                                             <div class="liContents">
                                                 <h3 class="liContitle">
@@ -185,8 +194,11 @@
                                     <!--// QININ -->
                                     <li class="size_4 item-folio">
                                         <div class="item-border">
-                                            <a href="./pSuperga.html">
+                                            <a href="./pSuperga.html" class="positionA">
                                                 <div class="liThumb" id="superga"></div>
+                                                <div class="hoverThumb"><span>
+                                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                                </span></div>
                                             </a>
                                             <div class="liContents">
                                                 <h3 class="liContitle">
@@ -203,8 +215,11 @@
                                     </li>
                                     <li class="size_4 item-folio">
                                         <div class="item-border">
-                                            <a href="./pKerasys.html">
+                                            <a href="./pKerasys.html"  class="positionA">
                                                 <div class="liThumb" id="kerasys"></div>
+                                                <div class="hoverThumb"><span>
+                                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                                </span></div>
                                             </a>
                                             <div class="liContents">
                                                 <h3 class="liContitle">
@@ -254,6 +269,18 @@
     <script type="text/javascript" src="../scripts/pc.js"></script>
     <!-- JS Implementing Plugins -->
     <script type="text/javascript">
+        /* Thumpnail hover jQuery */
+        function thumpOp(){
+            var onA = $(".positionA"),
+                liThumb = $(".liThumb");
+            
+            onA.mouseleave(function(e){
+            var hoverThumb = $(this).children(".hoverThumb");
+                e.preventDefault;
+               hoverThumb.addClass('animation-op-out');
+            });   
+        }
+        thumpOp();
     </script>
 </body>
 

@@ -301,7 +301,8 @@ div.graMove {
 
 /* PORTFOLIO CSS */
 
-.portList {
+.portList,
+.galleryList{
     padding-bottom: 30px;
 }
 
@@ -320,6 +321,11 @@ div.graMove {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px rgba(100, 100, 100, .2);
 }
 
+.item-border .positionA {
+    position: relative;
+    display: block;
+}
+
 .liThumb {
     width: 100%;
     height: 240px;
@@ -330,6 +336,62 @@ div.graMove {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.hoverThumb {
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    opacity: 0;
+}
+
+.positionA:hover .hoverThumb {
+    animation: op-in 0.5s ease;
+    opacity: 1;
+}
+
+
+.animation-op-out {
+    animation: op-out 0.5s ease;
+    opacity: 0;
+}
+
+
+@keyframes op-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }  
+}
+
+@keyframes op-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }  
+}
+
+
+.hoverThumb span{
+    position: relative;
+    display: block;
+    text-align: center;
+    height: auto;
+    top: 50%;
+    color: #fff;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+
+
 
 .liThumb#superga {
     background-image: url("../img/portfolio/superga_thumb.jpg");
@@ -571,6 +633,10 @@ div.graMove {
     color:#13567d !important
 }
 
+.fc_cds {
+    color:#eb6419 !important
+}
+
 .fa_center{
     text-align: center !important
 }
@@ -641,6 +707,10 @@ div.graMove {
 
 .pointBg_cds {
     background-image: linear-gradient(160deg, #eb6419 60%, #fff 40%);
+}
+
+.pointBg_cds2 {
+    background-image: linear-gradient(160deg, #fff 60%, #eb6419 40%);
 }
 
 
@@ -1044,4 +1114,134 @@ div.graMove {
         letter-spacing: -1px;
     }
     
+}
+
+
+/* Gallery CSS Start*/
+
+.galleryList li{
+    margin-bottom:30px;
+}
+
+.galleryThump {
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.galleryThump img{
+    display: block;
+    margin: 0 auto;
+}
+
+.hidden_text {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    color:#000;
+}
+
+.galleryThump:hover .hidden_text {
+    display: block;
+}
+
+
+/* Contact CSS Start */
+
+.contact_sec,
+.contact_form{
+    width:50%;
+    float:left;
+}
+
+.contact_sec h3 {
+    font-size:35px;    
+}
+
+.contact_sec .contact_bar {
+    border-bottom: #4F86C6 2px solid;
+    width: 28px;
+    height: 15px;
+}
+
+.contact_sec p {
+    padding:30px 0;
+    font-size:15px;
+}
+
+.contact_sec p span{
+    padding:15px 0 ;
+    display: inline-block;
+    font-weight: 600;
+    margin-right:10px;
+}
+
+.contact_form table {
+    width:100%;
+}
+
+
+.contact_form th {
+    width:150px;
+    font-size:20px;
+    font-weight: 600;
+    color:#393939;
+    padding:20px 0;
+}
+
+.contact_form .vr-top{
+vertical-align: top;
+    padding:40px 0 20px;
+}
+
+.contact_form td {
+    padding:20px 0;
+}
+
+.contact_form .form-contact{
+    width:100%;
+    background-color:#f1f1f1;
+    border:1px solid #bbbbbb;
+    height:40px;
+    line-height:1.2;
+    padding:5px;
+}
+
+.contact_form .ta-contact{
+    width:100%;
+    height:250px;
+    background-color:#f1f1f1;
+    border:1px solid #bbbbbb;
+    line-height:1.2;
+    padding:5px;
+    resize: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+div.text-center {
+    margin-top:30px;
+}
+
+.btn-inquiry {
+    display: inline-block;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    background: #292929;
+    padding: 0 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+
+.btn-inquiry:hover {
+    background: #4F86C6;
+    transition: all 0.5s ease;
 }
