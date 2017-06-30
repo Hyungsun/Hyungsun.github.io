@@ -1288,6 +1288,8 @@ div.graMove {
 }
 
 .contact_sec .contact_bar {
+    display: block;
+    margin-right: auto;
     border-bottom: #4F86C6 2px solid;
     width: 28px;
     height: 15px;
