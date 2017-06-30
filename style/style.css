@@ -1220,12 +1220,17 @@ div.graMove {
     position: relative;
     top:0;
     left:0;
-    width:500px;
-    height:500px;
+    min-width:300px;
+    height:auto;
     overflow: hidden;
     border:5px solid #fff;
 }
 
+.show_img img{
+    width:100%;
+    display: block;
+    margin:0 auto;
+}
 .gallery-op-in {
     animation: gal-op-in 0.3s ease;
 }
@@ -1252,6 +1257,19 @@ div.graMove {
     opacity: 0;
   }  
 }
+
+@media all and (max-width:550px) {
+.galleryShowBox .show_wrap {
+    position: relative;
+    top:50%;
+    left:50%;
+    width:300px;
+    height: 340px;
+    margin-top:-120px;
+    margin-left: -150px;
+}
+}
+
 
 
 /* Contact CSS Start */

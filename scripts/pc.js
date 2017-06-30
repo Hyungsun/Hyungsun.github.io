@@ -116,39 +116,3 @@ function modalOn() {
   });
 }
 
-
-/* 갤러리 사진 클릭시 큰 화면 출력 */
-function galleryOn() {
-    
-    var galleryBtn = $('.galleryItems'),
-        galleryWrap = $('.galleryShowBox'),
-        showBox = galleryWrap.find('.show_wrap'),
-        showImg = showBox.find('.show_img'),
-        closeImg = showBox.find('.close_showbox');
-    
-    galleryBtn.on('click',function(){
-        
-        var galleryThumb = $(this).find('.gal_thumb'),
-            galleryImg = galleryThumb.children('img').attr('src');
-         
-        galleryWrap.css('display','block');
-        galleryWrap.removeClass('gallery-op-out').addClass('gallery-op-in');
-        
-        showImg.find('img').attr('src',galleryImg);
-    })
-    
-      $(document).on('click', function(e) {
-        
-        var target = $(e.target);
-    
-        if(target.is(galleryWrap) || target.is(closeImg)) {
-            galleryWrap.removeClass('gallery-op-in').addClass('gallery-op-out').queue(function(next) {
-                galleryWrap.css('display', 'none');
-        next();
-      });
-    }
-  });    
-    
-    
-    
-}
