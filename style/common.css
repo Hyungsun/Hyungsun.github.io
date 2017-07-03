@@ -658,7 +658,7 @@ body {
 .wrap_banner .inner_banner {
     width: 100%;
     height: 100%;
-    background-image: url(../img/test_banner.jpg);
+    background-image: url(../img/summ_banner.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -774,6 +774,9 @@ body {
     .list_intro .img_inside {
         width: 320px;
         height: 319px;
+    }
+    .wrap_banner .inner_banner {
+        background-position: 65% 60%;
     }
 }
 
@@ -900,9 +903,11 @@ body {
     .wrap_banner {
         height: 450px;
     }
+/*
     .wrap_banner .inner_banner {
         background-position: 45% 60%;
     }
+*/
     .wrap_banner .txt_banner {
         padding: 150px 50px 0;
     }
@@ -928,7 +933,7 @@ body {
 
 @media all and (max-width:415px) {
     .wrap_banner .inner_banner {
-        background-position: 52% 60%;
+        background-position: 70% 60%;
     }
     .wrap_banner .txt_banner {
         padding: 150px 25px 0;
