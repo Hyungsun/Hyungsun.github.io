@@ -77,10 +77,18 @@
     box-shadow: 2px 2px 5px #898989;
 }
 
-.responsive-basic {
+.responsive-basic,
+.responsive-lisence{
     display: block;
     width: 100%;
     height: auto;
+}
+
+@media all and (max-width:991px) {
+    .responsive-lisence {
+         max-width:350px;   
+        margin: 0 auto;
+    }
 }
 
 @media all and (max-width:480px) {
@@ -144,7 +152,7 @@
 }
 
 .wrap_subject .emph_subject {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 30px;
     color: #30A9DE;
 }
@@ -213,35 +221,29 @@
     line-height: 24px;
 }
 
-.wrap_subject .list_graph dd div {
-    height: 25px;
-    float: left;
+.ability_section {
+    padding-bottom:15px;
 }
 
-div.graHtml {
-    background-image: linear-gradient(120deg, #e44d26 50%, #0070b9 50%);
-    width: 70%;
+.ability_section .lisence_box {
+    height:450px;
 }
 
-div.graJs {
-    background-color: #fcdb41;
-    width: 50%;
+.ability_section .lisence_box .lisence_intro {
+    padding:10px 0;    
 }
 
-div.graPhoto {
-    background-color: #00b1d9;
-    width: 65%;
+.lisence_intro span {
+    display: block;
 }
 
-div.graIliu {
-    background-color: #ff7f18;
-    width: 60%;
+.lisence_intro .lisence_more > p{
+    padding:15px 0;
+    font-size:14px;
 }
 
-div.graMove {
-    background-color: #ea77ff;
-    width: 50%;
-}
+
+
 
 @media all and (max-width:991px) {
     .title_subject,
@@ -259,6 +261,9 @@ div.graMove {
     }
     .wrap_subject .list_question {
         text-align: center;
+    }
+    .ability_section .lisence_box{
+        margin-bottom:30px;
     }
 }
 
@@ -295,6 +300,12 @@ div.graMove {
     }
     .resume_inner p .mnodis {
         display: none;
+    }
+}
+
+@media all and (max-width:370px) {
+        .ability_section .lisence_box{
+        height:auto;
     }
 }
 
