@@ -1380,6 +1380,7 @@ div.text-center {
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 
